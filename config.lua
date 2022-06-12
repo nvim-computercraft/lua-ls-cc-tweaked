@@ -22,6 +22,7 @@ local GLOBALS = {
 	"read",
 	"_HOST",
 	"_CC_DEFAULT_SETTINGS",
+	"colors",
 }
 
 for _, g in ipairs(GLOBALS) do
