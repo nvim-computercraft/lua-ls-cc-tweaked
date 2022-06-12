@@ -10,7 +10,7 @@
         "description": "Adds an example template as a Sumneko LuaDoc comment."
     },
     "Add Official Documentation Link" : {
-        "prefix": "---[",
+        "prefix": "---[Documentation]",
         "body": [
             "------",
             "---[Official Documentation]($1)"
