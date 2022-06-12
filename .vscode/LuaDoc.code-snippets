@@ -1,0 +1,20 @@
+{
+    "Add Example" : {
+        "prefix": "---Example",
+        "body": [
+            "---## Example",
+            "---```",
+            "---$1",
+            "---```"
+        ],
+        "description": "Adds an example template as a Sumneko LuaDoc comment."
+    },
+    "Add Official Documentation Link" : {
+        "prefix": "---[",
+        "body": [
+            "------",
+            "---[Official Documentation]($1)"
+        ],
+        "description": "Adds a link template for linking to the official documentation source."
+    }
+}
