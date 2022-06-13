@@ -1,9 +1,5 @@
 ---@meta
 
----@alias color integer An integer represeting a color value. Colors can be found in the `colors` namespace, such as `colors.orange`
-
----@alias colorSet integer A set of colors (an integer representing multiple color values)
-
 ---Contains constants and functions for colour values. Useful in conjunction
 ---with Bundled Cables from mods like [Project
 ---Red](https://projectredwiki.com/wiki/Main_Page), and colors on Advanced

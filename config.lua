@@ -24,6 +24,7 @@ local GLOBALS = {
 	"_CC_DEFAULT_SETTINGS",
 	"colors",
 	"disk",
+	"fs",
 }
 
 for _, g in ipairs(GLOBALS) do
