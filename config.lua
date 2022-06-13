@@ -23,6 +23,7 @@ local GLOBALS = {
 	"_HOST",
 	"_CC_DEFAULT_SETTINGS",
 	"colors",
+	"disk",
 }
 
 for _, g in ipairs(GLOBALS) do

@@ -1,4 +1,4 @@
----@diagnostic disable unused-local
+---@meta
 
 ---@alias color integer An integer represeting a color value. Colors can be found in the `colors` namespace, such as `colors.orange`
 
