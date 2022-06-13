@@ -25,6 +25,7 @@ local GLOBALS = {
 	"colors",
 	"disk",
 	"fs",
+	"gps",
 }
 
 for _, g in ipairs(GLOBALS) do
