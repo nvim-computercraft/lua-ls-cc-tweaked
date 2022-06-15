@@ -28,6 +28,7 @@ local GLOBALS = {
 	"gps",
 	"help",
 	"http",
+	"io",
 }
 
 for _, g in ipairs(GLOBALS) do

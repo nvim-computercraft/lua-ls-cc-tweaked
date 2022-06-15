@@ -41,8 +41,8 @@ function BinaryWriteHandle.close() end
 
 ---Change where the "cursor" is, changing where bytes will be written to. The
 ---new position is an offset relative to `whence`
----@param whence seekWhence What `offset` is relative to
----@param offset number The offset to seek to
+---@param whence? seekWhence What `offset` is relative to. Defaults to `cur`
+---@param offset? number The offset to seek to. Defaults to 0
 ---@return number|nil newPosition The new file write position relative to the start of the file or nil if seeking failed
 ---@return string|nil errorMessage The reason seeking failed
 ---@throws If the file has been closed
