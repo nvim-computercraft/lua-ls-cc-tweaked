@@ -29,6 +29,7 @@ local GLOBALS = {
 	"help",
 	"http",
 	"io",
+	"keys",
 }
 
 for _, g in ipairs(GLOBALS) do
