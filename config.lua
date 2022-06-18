@@ -30,6 +30,7 @@ local GLOBALS = {
 	"http",
 	"io",
 	"keys",
+	"multishell",
 }
 
 for _, g in ipairs(GLOBALS) do
