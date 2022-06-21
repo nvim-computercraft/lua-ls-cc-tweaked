@@ -33,6 +33,7 @@ local GLOBALS = {
 	"multishell",
 	"os",
 	"paintutils",
+	"parallel",
 }
 
 for _, g in ipairs(GLOBALS) do

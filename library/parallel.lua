@@ -1,0 +1,72 @@
+---@meta
+
+---Offers a simple way to run multiple functions at once
+---
+---Functions are not actually run simultaneously, however, this API will
+---automatically switch between them whenever they yield (whether that be through
+---`coroutine.yield()`, or functions that call that, such as `os.pullEvent()`)
+---
+---Each function executed in "parallel" gets its own copy of the event queue,
+---and so "event consuming" functions (again, mostly anything that causes the
+---script to pause - e.g. `os.sleep`, `rednet.receive`, most of the turtle API, etc)
+---can safely be used in one without affecting the event queue accessed by the
+---other.
+---
+---⚠️ Be careful to pass in the function you want to execute in parallel and not
+---the result of that function (don't *call* the function)
+---
+------
+---[Official Documentation](https://tweaked.cc/module/parallel.html)
+parallel = {}
+
+---Switches between the execution of the functions until any one of them finishes
+---
+---Should one of the functions error, it will be propgated up to this
+---`parallel.waitForAny()` call
+---@param ... function The functions to be run in "parallel"
+---## Example
+---```
+---local function tick()
+---    while true do
+---        os.sleep(1)
+---        print("Tick")
+---    end
+---end
+---local function wait_for_q()
+---    repeat
+---        local _, key = os.pullEvent("key")
+---    until key == keys.q
+---    print("Q was pressed!")
+---end
+---
+-----Print a message every second until the q key is pressed
+---parallel.waitForAny(tick, wait_for_q)
+---print("Everything done!")
+---```
+------
+---[Official Documentation](https://tweaked.cc/module/parallel.html#v:waitForAny)
+function parallel.waitForAny(...) end
+
+---Switches between the execution of the functions until they all finish
+---
+---Should one of the functions error, it will be propgated up to this
+---`parallel.waitForAll()` call
+---@param ... function
+---## Example
+---```
+---local function a()
+---    os.sleep(1)
+---    print("A is done")
+---end
+---local function b()
+---    os.sleep(3)
+---    print("B is done")
+---end
+---
+-----Start two timers and wait for both to finish
+---parallel.waitForAll(a, b)
+---print("Everything done!")
+---```
+------
+---[Official Documentation](https://tweaked.cc/module/parallel.html#v:waitForAll)
+function parallel.waitForAll(...) end
