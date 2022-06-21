@@ -1,6 +1,9 @@
 ---@meta
 
 ---For interacting with CraftOS on the current computer
+---
+------
+---[Official Documentation](https://tweaked.cc/module/os.html)
 os = {}
 
 ---Loads an API/library into the global environment
