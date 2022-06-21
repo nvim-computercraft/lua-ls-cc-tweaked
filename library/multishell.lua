@@ -12,6 +12,8 @@
 ---
 ---Each process is identified by its PID (process ID), which corresponds to its position in
 ---the tab list. As these positions can change, the **PID is not constant**.
+------
+---[Official Documentation](https://tweaked.cc/module/multishell.html)
 multishell = {}
 
 ---Get the currently opened/visible process. This is the currently selected
