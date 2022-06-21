@@ -31,6 +31,7 @@ local GLOBALS = {
 	"io",
 	"keys",
 	"multishell",
+	"os",
 }
 
 for _, g in ipairs(GLOBALS) do
