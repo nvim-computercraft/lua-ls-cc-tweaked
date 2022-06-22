@@ -75,6 +75,7 @@ function disk.getMountPath(name) end
 ---@param name computerSide|string The name of the disk drive or the side of the computer that the drive is on
 ---@return boolean hasAudio If an item is present and is a record
 ---Supports: 💾💿🖥️
+---
 ------
 ---[Official Documentation](https://tweaked.cc/module/disk.html#v:hasAudio)
 function disk.hasAudio(name) end
