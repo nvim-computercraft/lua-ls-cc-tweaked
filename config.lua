@@ -35,6 +35,7 @@ local GLOBALS = {
 	"paintutils",
 	"parallel",
 	"peripheral",
+	"pocket",
 }
 
 for _, g in ipairs(GLOBALS) do
