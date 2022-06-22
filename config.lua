@@ -36,6 +36,7 @@ local GLOBALS = {
 	"parallel",
 	"peripheral",
 	"pocket",
+	"rednet",
 }
 
 for _, g in ipairs(GLOBALS) do
