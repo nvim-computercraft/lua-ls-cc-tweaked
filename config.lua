@@ -38,6 +38,7 @@ local GLOBALS = {
 	"pocket",
 	"rednet",
 	"redstone",
+	"settings",
 }
 
 for _, g in ipairs(GLOBALS) do
