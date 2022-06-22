@@ -41,6 +41,7 @@ local GLOBALS = {
 	"settings",
 	"shell",
 	"term",
+	"textutils",
 }
 
 for _, g in ipairs(GLOBALS) do
