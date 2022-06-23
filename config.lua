@@ -23,6 +23,7 @@ local GLOBALS = {
 	"_HOST",
 	"_CC_DEFAULT_SETTINGS",
 	"colors",
+	"commands",
 	"disk",
 	"fs",
 	"gps",
