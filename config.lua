@@ -44,6 +44,7 @@ local GLOBALS = {
 	"textutils",
 	"turtle",
 	"vector",
+	"window",
 }
 
 for _, g in ipairs(GLOBALS) do
