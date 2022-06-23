@@ -42,6 +42,7 @@ local GLOBALS = {
 	"shell",
 	"term",
 	"textutils",
+	"turtle",
 }
 
 for _, g in ipairs(GLOBALS) do
