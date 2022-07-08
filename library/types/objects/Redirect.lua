@@ -19,8 +19,8 @@ function Redirect.write(text) end
 function Redirect.scroll(y) end
 
 ---Get the current position of the cursor
----@return number x The current x position
----@return number y The current y position
+---@return integer x The current x position
+---@return integer y The current y position
 ------
 ---[Official Documentation](https://tweaked.cc/module/term.html#ty:Redirect:getCursorPos)
 function Redirect.getCursorPos() end
@@ -45,8 +45,8 @@ function Redirect.getCursorBlink() end
 function Redirect.setCursorBlink(blink) end
 
 ---Get the size of the terminal
----@return number width The terminal's width
----@return number height The terminal's height
+---@return integer width The terminal's width
+---@return integer height The terminal's height
 ------
 ---[Official Documentation](https://tweaked.cc/module/term.html#ty:Redirect:getSize)
 function Redirect.getSize() end
