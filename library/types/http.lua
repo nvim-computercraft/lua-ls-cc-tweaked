@@ -1,4 +1,4 @@
----@alias HTTP_REQUEST_HEADERS
+---@alias HTTP_REQUEST_HEADERS string
 ---| '"A-IM"'
 ---| '"Accept"'
 ---| '"Accept-Charset"'
@@ -35,7 +35,7 @@
 ---| '"Via"'
 ---| '"Warning"'
 
----@alias HTTP_RESPONSE_HEADERS
+---@alias HTTP_RESPONSE_HEADERS string
 ---| '"Access-Control-Allow-Origin"'
 ---| '"Access-Control-Allow-Credentials"'
 ---| '"Access-Control-Expose-Headers"'
