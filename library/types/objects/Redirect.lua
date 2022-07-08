@@ -57,6 +57,7 @@ function Redirect.getSize() end
 function Redirect.clear() end
 
 ---Clears the line the cursor is on, filling it with the current background color
+---
 ------
 ---[Official Documentation](https://tweaked.cc/module/term.html#ty:Redirect:clearLine)
 function Redirect.clearLine() end
