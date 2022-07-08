@@ -91,7 +91,7 @@ textutils.json_null = {
 ---Get a textual representation of a Lua table, suitable for saving to a file or
 ---printing
 ---@param tbl table The table to convert
----@param options serializationOptions
+---@param options? serializationOptions
 ---@return string serialized The serialized representation
 ---@throws If the table contains a function
 ---@throws If the table contains tables that appear multiple times
@@ -102,7 +102,7 @@ function textutils.serialize(tbl, options) end
 ---Get a textual representation of a Lua table, suitable for saving to a file or
 ---printing
 ---@param t table The table to convert
----@param options serializationOptions
+---@param options? serializationOptions
 ---@return string serialised The serialised representation
 ---@throws If the table contains a function
 ---@throws If the table contains tables that appear multiple times
@@ -133,7 +133,7 @@ function textutils.unserialise(str) end
 ---This is largely intended for interacting with various functions from the
 ---commands API, though may also be used in making http requests.
 ---@param tbl string|boolean|number|table The value to serialize
----@param NBTstyle boolean If [NBT style](https://minecraft.fandom.com/wiki/NBT_format) JSON (non-quoted keys) should be output
+---@param NBTstyle? boolean If [NBT style](https://minecraft.fandom.com/wiki/NBT_format) JSON (non-quoted keys) should be output
 ---@return string JSON The JSON output
 ---@throws If the `value` contains a function
 ---@throws If the `value` contains tables that appear multiple times
@@ -150,7 +150,7 @@ function textutils.serializeJSON(tbl, NBTstyle) end
 ---This is largely intended for interacting with various functions from the
 ---commands API, though may also be used in making http requests.
 ---@param tbl table The value to serialise
----@param NBTstyle boolean If [NBT style](https://minecraft.fandom.com/wiki/NBT_format) JSON (non-quoted keys) should be output
+---@param NBTstyle? boolean If [NBT style](https://minecraft.fandom.com/wiki/NBT_format) JSON (non-quoted keys) should be output
 ---@return string JSON The JSON output
 ---@throws If `t` contains a function
 ---@throws If `t` contains tables that appear multiple times
@@ -160,7 +160,7 @@ function textutils.serialiseJSON(tbl, NBTstyle) end
 
 ---Convert a serialized JSON string back into a Lua table
 ---@param str string The string to unserialize
----@param options unserializeJSONOptions Options for unserializing
+---@param options? unserializeJSONOptions Options for unserializing
 ---@return table|nil unserialized The unserialized object or `nil` if the object couldn't be unserialized
 ---@return string|nil errorMessage Why the object couldn't be unserialized
 ------
@@ -169,7 +169,7 @@ function textutils.unserializeJSON(str, options) end
 
 ---Convert a serialised JSON string back into a Lua table
 ---@param str string The string to unserialise
----@param options unserializeJSONOptions Options for unserialising
+---@param options? unserializeJSONOptions Options for unserialising
 ---@return table|nil unserialised The unserialised object or `nil` if the object couldn't be unserialised
 ---@return string|nil errorMessage Why the object couldn't be unserialised
 ------
