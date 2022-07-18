@@ -14,7 +14,10 @@ shell =  {}
 
 ---Run a program with the provided arguments
 ---
----Unlike `shell.run()`, each argument is passed to the program as-is
+---Unlike `shell.run()`, each argument is passed to the program as-is.
+---
+---`shell.run("echo", "a b c")` will run echo with the arguments `a`, `b`, and
+---`c`. `shell.execute("echo", "a b c")` will run echo with the argument "a b c"
 ---@param command string The program to execute
 ---@param ... string Arguments to this program
 ---@return boolean success Whether the program exited successfully
