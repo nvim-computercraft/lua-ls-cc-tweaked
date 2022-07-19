@@ -6,6 +6,8 @@
 ---used to print the most compact layout possible
 ---
 ---Based on [*A Prettier Printer*](https://homepages.inf.ed.ac.uk/wadler/papers/prettier/prettier.pdf)
+------
+---[Official Documentation](https://tweaked.cc/library/cc.pretty.html)
 pretty = {}
 
 ---A document contains formatted text with multiple possible layouts.
@@ -130,3 +132,5 @@ function pretty.pretty(obj, options) end
 ------
 ---[Official Documentation](https://tweaked.cc/library/cc.pretty.html#v:pretty_print)
 function pretty.pretty_print(obj, options, maxWidth) end
+
+return pretty
