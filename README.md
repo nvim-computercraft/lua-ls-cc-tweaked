@@ -6,8 +6,11 @@ This documentation covers the Lua API for [ComputerCraft:Tweaked](https://tweake
 2. If you don't already have one, create a folder, wherever you'd like, that can contain all your third-party libraries for Sumneko's Lua extension.
 3. In this folder, create a new folder named `CC-Tweaked` or something similar.
 4. Paste the contents from this repo in this new `CC-Tweaked` folder.
-5. Open VS Code and [open the settings](https://code.visualstudio.com/docs/getstarted/settings) for `sumneko.lua`
-6. In the searchbar, type `@ext:sumneko.lua third party library`
+5. Open VS Code and [open the settings](https://code.visualstudio.com/docs/getstarted/settings)
+6. In the searchbar, type:
+   ```txt
+   @ext:sumneko.lua third party library
+   ```
 7. Select `Add Item`
 8. Paste in the absolute path to the folder containing all of your libraries from step 2 (the one that contains the `CC-Tweaked` folder)
 
