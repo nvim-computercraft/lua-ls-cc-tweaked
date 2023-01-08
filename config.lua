@@ -1,6 +1,6 @@
 name = "CC:Tweaked"
 
-words = { "turtle%.%w+", "rednet%.%w+", "redstone%.%w+", "minecraft", "computercraft" }
+words = { "turtle%.%w+", "rednet%.%w+", "redstone%.%w+", "minecraft", "computercraft", "peripheral%.%w+" }
 
 files = { "startup.lua" }
 
