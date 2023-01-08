@@ -19,7 +19,7 @@ function Websocket.receive(timeout) end
 
 ---Send a message to the server
 ---@param message any The message to send
----@param binary boolean If this message is binary or not
+---@param binary? boolean If this message is binary or not
 ---@throws If the message is too large
 ---@throws If the websocket has been closed
 ------
