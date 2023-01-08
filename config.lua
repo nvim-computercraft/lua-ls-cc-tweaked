@@ -1,6 +1,32 @@
 name = "CC:Tweaked"
 
-words = { "turtle%.%w+", "rednet%.%w+", "redstone%.%w+", "minecraft", "computercraft", "peripheral%.%w+" }
+words = {
+    "colors%.%w+",
+    "commands%.%w+",
+    "disk%.%w+",
+    "fs%.%w+",
+    "globals%.%w+",
+    "gps%.%w+",
+    "help%.%w+",
+    "http%.%w+",
+    "io%.%w+",
+    "keys%.%w+",
+    "multishell%.%w+",
+    "os%.%w+",
+    "paintutils%.%w+",
+    "parallel%.%w+",
+    "peripheral%.%w+",
+    "pocket%.%w+",
+    "rednet%.%w+",
+    "redstone%.%w+",
+    "settings%.%w+",
+    "shell%.%w+",
+    "term%.%w+",
+    "textutils%.%w+",
+    "turtle%.%w+",
+    "vector%.%w+",
+    "window%.%w+",
+}
 
 files = { "startup.lua" }
 
