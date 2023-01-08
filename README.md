@@ -21,6 +21,7 @@ Trigger cases:
   - `turtle.<something>`
   - `rednet.<something>`
   - `redstone.<something>`
+  - `peripheral.<something>`
   - `minecraft`
   - `computercraft`
 - File is named:
