@@ -40,4 +40,4 @@ function FluidStorage.pushFluid(toName, limit, fluidName) end
 ---@throws If the source container isn't for fluids
 ------
 ---[Official Documentation](https://tweaked.cc/generic_peripheral/fluid_storage.html#v:pullFluid)
-function  FluidStorage.pullFluid(fromName, limit, fluidName) end
+function FluidStorage.pullFluid(fromName, limit, fluidName) end

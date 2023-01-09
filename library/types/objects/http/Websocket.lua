@@ -26,7 +26,6 @@ function Websocket.receive(timeout) end
 ---[Official Documentation](https://tweaked.cc/module/http.html#ty:Websocket:send)
 function Websocket.send(message, binary) end
 
-
 ---Close the websocket connection meaning you can no longer send or receive on it
 ---
 ------

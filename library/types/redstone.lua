@@ -1,7 +1,7 @@
 ---@meta
 
 ---@class computerSidesTable
-computerSidesTable = {"top", "bottom", "left", "right", "front", "back"}
+computerSidesTable = { "top", "bottom", "left", "right", "front", "back" }
 
 ---@alias signalStrength
 ---| 0

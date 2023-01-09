@@ -13,7 +13,7 @@
 ------
 ---[Official Documentation](https://tweaked.cc/peripheral/drive.html)
 ---@class Drive
-Drive =  {}
+Drive = {}
 
 ---Checks that an item is in the drive
 ---@return boolean present If an item is in the drive

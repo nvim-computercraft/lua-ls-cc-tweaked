@@ -10,7 +10,7 @@
 ------
 ---[Official Documentation](https://tweaked.cc/module/shell.html)
 ---@class shell
-shell =  {}
+shell = {}
 
 ---Run a program with the provided arguments
 ---

@@ -75,7 +75,9 @@ function textutils.pagedTabulate(...) end
 ------
 ---[Official Documentation](https://tweaked.cc/module/textutils.html#v:empty_json_array)
 textutils.empty_json_array = {
-    __tostring = function() return "[]" end
+	__tostring = function()
+		return "[]"
+	end,
 }
 
 ---A table representing the JSON null value
@@ -85,7 +87,9 @@ textutils.empty_json_array = {
 ------
 ---[Official Documentation](https://tweaked.cc/module/textutils.html#v:json_null)
 textutils.json_null = {
-    __tostring = function() return "null" end
+	__tostring = function()
+		return "null"
+	end,
 }
 
 ---Get a textual representation of a Lua table, suitable for saving to a file or
