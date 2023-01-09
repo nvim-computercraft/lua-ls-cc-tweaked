@@ -33,3 +33,4 @@
 ---| '"websocket_failure"' # Fired when a websocket connection fails. [Official Documentation](https://tweaked.cc/event/websocket_failure.html)
 ---| '"websocket_message"' # Fired when a websocket message is received. [Official Documentation](https://tweaked.cc/event/websocket_message.html)
 ---| '"websocket_success"' # Fired when a websocket connection succeeds. [Official Documentation](https://tweaked.cc/event/websocket_success.html)
+---| '"file_transfer"' # Fired when a user drags-and-drops a file on an open computer. [Official Documentation](https://tweaked.cc/event/file_transfer.html)
