@@ -1,5 +1,7 @@
-# CC:Tweaked Documentation
-This documentation covers the Lua API for [ComputerCraft:Tweaked](https://tweaked.cc/) and is meant to be used in [Visual Studio Code](https://code.visualstudio.com/) with [Sumneko's Lua extension](https://marketplace.visualstudio.com/items?itemName=sumneko.lua) (`sumneko.lua`).
+# Lua Language Server library for CC: Tweaked
+This is a [Lua Language Server](https://github.com/sumneko/lua-language-server) [library](https://github.com/sumneko/lua-language-server/wiki/Libraries) for [CC: Tweaked](https://computercraft.cc)'s [APIs](https://tweaked.cc/).
+
+Before the fork, this was intended to be used in [Visual Studio Code](https://code.visualstudio.com/) with [Sumneko's Lua extension](https://marketplace.visualstudio.com/items?itemName=sumneko.lua) (`sumneko.lua`). This fork concentrates on making completions for ComputerCraft a first-class citizen in editors such as Neovim, Vim, and Emacs.
 
 ## Setup
 1. Download the repository
@@ -29,4 +31,4 @@ Trigger cases:
 
 After applying the workspace, you should have full autocompletion and diagnostics.
 
-> Note: CC:Tweaked has some [seriously cursed](https://tweaked.cc/reference/feature_compat.html) support for Lua features, thus, the environment is a little messy and is not currently emulated as accurately as possible. As time goes on, I can figure out what is and isn't supported in CC:Tweaked and remove unsupported features using `config.lua` from the built-in libraries of Sumneko's Lua extension.
+> Note: CC: Tweaked has some [seriously cursed](https://tweaked.cc/reference/feature_compat.html) support for Lua features, thus, the environment is a little messy and is not currently emulated as accurately as possible. As time goes on, I can figure out what is and isn't supported in CC:Tweaked and remove unsupported features using `config.lua` from the built-in libraries of Sumneko's Lua extension.
