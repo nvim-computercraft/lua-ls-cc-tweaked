@@ -103,7 +103,7 @@ function peripheral.wrap(name) end
 
 ---Find all peripherals of a given type and return them wrapped
 ---@param peripheralType peripheralType The type of peripheral to find
----@param filter fun(name: string, wrapped: wrappedPeripheral): boolean? A filter function that should return if the peripheral should be included in the result
+---@param filter? fun(name: string, wrapped: wrappedPeripheral): boolean A filter function that should return if the peripheral should be included in the result
 ---@return wrappedPeripheral[] wrappedPeripherals The wrapped peripherals that were found, if any
 ---## Example
 ---```
