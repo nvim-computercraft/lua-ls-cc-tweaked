@@ -37,7 +37,7 @@ function os.unloadAPI(name) end
 ---
 ---This works by yielding until it receives a vararg list where the first
 ---element matches the name of the event provided
----@param event|string? event The event to listen for
+---@param event event|string? The event to listen for
 ---@return event|string event The name of the event that fired
 ---@return any ... Any values returned by the event
 ---## Example
@@ -67,7 +67,7 @@ function os.pullEvent(event) end
 ---
 ---This works by yielding until it receives a vararg list where the first
 ---element matches the name of the event provided
----@param event|string? event The event to listen for
+---@param event event|string? The event to listen for
 ---@return event|string event The name of the event that fired
 ---@return any ... Any values returned by the event
 ---## Example

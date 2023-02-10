@@ -92,38 +92,40 @@ textutils.json_null = {
 	end,
 }
 
----Get a textual representation of a Lua table, suitable for saving to a file or
+---Get a textual representation of a Lua object, suitable for saving to a file or
 ---printing
----@param tbl table The table to convert
+---@param tbl table|string|number|nil The object to convert
 ---@param options? serializationOptions
 ---@return string serialized The serialized representation
+---@throws if the object is a function
 ---@throws If the table contains a function
 ---@throws If the table contains tables that appear multiple times
 ------
 ---[Official Documentation](https://tweaked.cc/module/textutils.html#v:serialize)
 function textutils.serialize(tbl, options) end
 
----Get a textual representation of a Lua table, suitable for saving to a file or
+---Get a textual representation of a Lua object, suitable for saving to a file or
 ---printing
----@param t table The table to convert
+---@param t table|string|number|nil The object to convert
 ---@param options? serializationOptions
 ---@return string serialised The serialised representation
+---@throws if the object is a function
 ---@throws If the table contains a function
 ---@throws If the table contains tables that appear multiple times
 ------
 ---[Official Documentation](https://tweaked.cc/module/textutils.html#v:serialise)
 function textutils.serialise(t, options) end
 
----Convert a serialized string back into a Lua table
----@param str string The text to turn back into a table
----@return table|nil tbl The unserialized table or `nil` if the table couldn't be unserialized
+---Convert a serialized string back into a Lua object
+---@param str table|string|number|nil The text to turn back into an object
+---@return table|string|number|nil tbl The unserialized object or `nil` if the object couldn't be unserialized
 ------
 ---[Official Documentation](https://tweaked.cc/module/textutils.html#v:unserialize)
 function textutils.unserialize(str) end
 
----Convert a serialised string back into a Lua table
----@param str string The text to turn back into a table
----@return table|nil tbl The unserialised table or `nil` if the table couldn't be unserialised
+---Convert a serialised string back into a Lua objct
+---@param str string The text to turn back into an object
+---@return table|string|number|nil tbl The unserialized object or `nil` if the object couldn't be unserialized
 ------
 ---[Official Documentation](https://tweaked.cc/module/textutils.html#v:unserialise)
 function textutils.unserialise(str) end
