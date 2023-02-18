@@ -92,9 +92,11 @@ textutils.json_null = {
 	end,
 }
 
+---@alias serializable string|number|table|boolean
+
 ---Get a textual representation of a Lua object, suitable for saving to a file or
 ---printing
----@param tbl table|string|number|nil The object to convert
+---@param tbl serializable The object to convert
 ---@param options? serializationOptions
 ---@return string serialized The serialized representation
 ---@throws if the object is a function
@@ -106,7 +108,7 @@ function textutils.serialize(tbl, options) end
 
 ---Get a textual representation of a Lua object, suitable for saving to a file or
 ---printing
----@param t table|string|number|nil The object to convert
+---@param t serializable The object to convert
 ---@param options? serializationOptions
 ---@return string serialised The serialised representation
 ---@throws if the object is a function
@@ -117,15 +119,15 @@ function textutils.serialize(tbl, options) end
 function textutils.serialise(t, options) end
 
 ---Convert a serialized string back into a Lua object
----@param str table|string|number|nil The text to turn back into an object
----@return table|string|number|nil tbl The unserialized object or `nil` if the object couldn't be unserialized
+---@param str string The text to turn back into an object
+---@return serializable tbl The unserialized object or `nil` if the object couldn't be unserialized
 ------
 ---[Official Documentation](https://tweaked.cc/module/textutils.html#v:unserialize)
 function textutils.unserialize(str) end
 
 ---Convert a serialised string back into a Lua objct
 ---@param str string The text to turn back into an object
----@return table|string|number|nil tbl The unserialized object or `nil` if the object couldn't be unserialized
+---@return serializable tbl The unserialized object or `nil` if the object couldn't be unserialized
 ------
 ---[Official Documentation](https://tweaked.cc/module/textutils.html#v:unserialise)
 function textutils.unserialise(str) end
@@ -138,7 +140,7 @@ function textutils.unserialise(str) end
 ---
 ---This is largely intended for interacting with various functions from the
 ---commands API, though may also be used in making http requests.
----@param tbl string|boolean|number|table The value to serialize
+---@param tbl serializable The value to serialize
 ---@param NBTstyle? boolean If [NBT style](https://minecraft.fandom.com/wiki/NBT_format) JSON (non-quoted keys) should be output
 ---@return string JSON The JSON output
 ---@throws If the `value` contains a function
@@ -155,7 +157,7 @@ function textutils.serializeJSON(tbl, NBTstyle) end
 ---
 ---This is largely intended for interacting with various functions from the
 ---commands API, though may also be used in making http requests.
----@param tbl table The value to serialise
+---@param tbl serializable The value to serialise
 ---@param NBTstyle? boolean If [NBT style](https://minecraft.fandom.com/wiki/NBT_format) JSON (non-quoted keys) should be output
 ---@return string JSON The JSON output
 ---@throws If `t` contains a function
@@ -167,7 +169,7 @@ function textutils.serialiseJSON(tbl, NBTstyle) end
 ---Convert a serialized JSON string back into a Lua table
 ---@param str string The string to unserialize
 ---@param options? unserializeJSONOptions Options for unserializing
----@return table|nil unserialized The unserialized object or `nil` if the object couldn't be unserialized
+---@return serializable|nil unserialized The unserialized object or `nil` if the object couldn't be unserialized
 ---@return string|nil errorMessage Why the object couldn't be unserialized
 ------
 ---[Official Documentation](https://tweaked.cc/module/textutils.html#v:unserializeJSON)
@@ -176,7 +178,7 @@ function textutils.unserializeJSON(str, options) end
 ---Convert a serialised JSON string back into a Lua table
 ---@param str string The string to unserialise
 ---@param options? unserializeJSONOptions Options for unserialising
----@return table|nil unserialised The unserialised object or `nil` if the object couldn't be unserialised
+---@return serializable|nil unserialised The unserialised object or `nil` if the object couldn't be unserialised
 ---@return string|nil errorMessage Why the object couldn't be unserialised
 ------
 ---[Official Documentation](https://tweaked.cc/module/textutils.html#v:unserialiseJSON)
