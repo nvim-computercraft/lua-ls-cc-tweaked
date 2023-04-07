@@ -16,7 +16,10 @@
 ---| '"monitor"'
 ---| '"printer"'
 ---| '"speaker"'
+---| '"energy_storage"'
+---| '"fluid_storage"'
 ---| '"inventory"'
+---| string
 
 ---@alias wrappedPeripheral Command|Computer|Drive|EnergyStorage|FluidStorage|Inventory|Modem|Monitor|Printer|Speaker|WiredModem
 
