@@ -12,7 +12,7 @@ _HOST = nil
 _CC_DEFAULT_SETTINGS = nil
 
 ---Pauses execution for the specified number of seconds.
----@param time number The number of seconds to sleep for, rounded up to the nearest multiple of 0.05
+---@param time number? The number of seconds to sleep for, rounded up to the nearest multiple of 0.05
 ---As it waits for a fixed amount of world ticks, time will automatically be
 ---rounded up to the nearest multiple of 0.05 seconds. If you are using
 ---coroutines or the parallel API, it will only pause execution of the current

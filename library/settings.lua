@@ -82,6 +82,6 @@ function settings.load(path) end
 ---Save settings to a file
 ---
 ---This will completely overwrite the target file
----@param path path The path to save the file to (defaults to `.settings`)
+---@param path path? The path to save the file to (defaults to `.settings`)
 ---@return boolean success If the settings were successfully saved
 function settings.save(path) end

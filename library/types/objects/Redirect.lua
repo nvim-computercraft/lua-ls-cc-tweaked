@@ -7,7 +7,7 @@ Redirect = {}
 ---Write `text` at the current cursor position, moving the cursor to the end of the text
 ---
 ---🗒️Unlike `_G.write()` and `_G.print()`, this function does not wrap text
----@param text string The text to write
+---@param text string|number The text to write
 ------
 ---[Official Documentation](https://tweaked.cc/module/term.html#ty:Redirect:write)
 function Redirect.write(text) end

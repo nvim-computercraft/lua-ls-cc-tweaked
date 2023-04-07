@@ -6,11 +6,12 @@
 ---[Official Documentation](https://tweaked.cc/library/cc.expect.html)
 expect = {}
 
+
 ---Expect an argument to be of a certain type
 ---@generic T
 ---@param argIndex integer The index of the argument (for error reporting)
 ---@param value T The value to check
----@param ... "number"|"string"|"boolean"|"nil" The type the value should be
+---@param ... type The type the value should be
 ---@return T value
 ---@throws If the value is not of one of the specified types
 ------
@@ -20,7 +21,7 @@ function expect.expect(argIndex, value, ...) end
 ---Expect a field to be of a certain type
 ---@param tbl table The table the field belongs to
 ---@param key string The name of the field to check
----@param ... "number"|"string"|"boolean"|"nil" The type the value should be
+---@param ... type The type the value should be
 ---@return any value The value of the field
 ---@throws If the value is not of one of the specified types
 ------

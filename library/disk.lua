@@ -105,7 +105,7 @@ function disk.getAudioTitle(name) end
 function disk.playAudio(name) end
 
 ---Stops the currently playing record that was started with `disk.playAudio()`
----@param name computerSide|string The name of the disk drive or the side of the computer that the drive is on
+---@param name computerSide|string? The name of the disk drive or the side of the computer that the drive is on
 ---Supports: 💿
 ---
 ------
