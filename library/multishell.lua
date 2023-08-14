@@ -54,7 +54,7 @@ function multishell.getCurrent() end
 ---@param env table The environment to load the path under. For example, passing `_E` will pass the environment you are currently using.
 ---@param path path The path to the program to launch
 ---@param ... any Additional arguments to pass to the program
----@return PID The ID of the created process
+---@return PID PID The ID of the created process
 ---## Example
 ---```
 ---local pENV = {}
