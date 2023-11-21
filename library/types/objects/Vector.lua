@@ -7,6 +7,9 @@
 ------
 ---[Official Documentation](https://tweaked.cc/module/vector.html#ty:Vector)
 ---@class Vector
+---@field x number
+---@field y number
+---@field z number
 Vector = {}
 
 ---Add two `Vector` objects together
