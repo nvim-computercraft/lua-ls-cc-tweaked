@@ -17,4 +17,4 @@
 
 ---@alias ASCII number An [ASCII code](https://www.rapidtables.com/code/text/ascii-table.html) that corresponds to a character
 
----@alias fileAttributes {size: boolean, isDir: boolean, isReadOnly: boolean, created: epoch, modified: epoch}
+---@alias fileAttributes {size: number, isDir: boolean, isReadOnly: boolean, created: epoch, modified: epoch}
