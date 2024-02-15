@@ -15,6 +15,7 @@ Before the fork, this was intended to be used in [Visual Studio Code](https://co
    ```
 7. Select `Add Item`
 8. Paste in the absolute path to the folder containing all of your libraries from step 2 (the one that contains the `CC-Tweaked` folder)
+9. Then to enable third party libaries click on `Edit in settings.json` under `Check Third Party` and set `"Lua.workspace.checkThirdParty": true`
 
 Now when you trigger one of the below cases you should be prompted to set up your workspace as a `CC:Tweaked` workspace.
 
