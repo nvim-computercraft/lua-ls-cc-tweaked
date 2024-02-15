@@ -1,0 +1,194 @@
+{
+    "configs": [
+        {
+            "action": "set",
+            "key": "Lua.runtime.version",
+            "value": "Lua 5.3"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "sleep"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "write"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "print"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "printError"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "read"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "_HOST"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "_CC_DEFAULT_SETTINGS"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "colors"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "commands"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "disk"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "fs"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "gps"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "help"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "http"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "io"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "keys"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "multishell"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "os"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "paintutils"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "parallel"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "peripheral"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "pocket"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "rednet"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "redstone"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "settings"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "shell"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "term"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "textutils"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "turtle"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "vector"
+        },
+        {
+            "action": "add",
+            "key": "Lua.diagnostics.globals",
+            "value": "window"
+        }
+    ],
+    "files": [
+        "startup.lua"
+    ],
+    "name": "CC:Tweaked",
+    "words": [
+        "colors%.%w+",
+        "colours%.%w+",
+        "commands%.%w+",
+        "disk%.%w+",
+        "fs%.%w+",
+        "globals%.%w+",
+        "gps%.%w+",
+        "help%.%w+",
+        "http%.%w+",
+        "keys%.%w+",
+        "multishell%.%w+",
+        "paintutils%.%w+",
+        "parallel%.%w+",
+        "peripheral%.%w+",
+        "pocket%.%w+",
+        "rednet%.%w+",
+        "redstone%.%w+",
+        "settings%.%w+",
+        "shell%.%w+",
+        "term%.%w+",
+        "textutils%.%w+",
+        "turtle%.%w+",
+        "vector%.%w+",
+        "window%.%w+"
+    ]
+}
