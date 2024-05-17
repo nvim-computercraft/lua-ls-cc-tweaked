@@ -20,9 +20,9 @@ gps.CHANNEL_GPS = 65534
 ---Attempt to retrieve the location of this computer
 ---@param timeout number The maximum time in seconds permitted to try and retrieve location
 ---@param debug boolean If debugging messages should be displayed
----@return number x This computer's `x` position
----@return number y This computer's `y` position
----@return number z This computer's `z` position
+---@return number? x This computer's `x` position
+---@return number? y This computer's `y` position
+---@return number? z This computer's `z` position
 ------
 ---[Official Documentation](https://tweaked.cc/module/gps.html#v:locate)
 function gps.locate(timeout, debug) end
