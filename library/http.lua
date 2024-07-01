@@ -137,6 +137,22 @@ function http.checkURL(url) end
 ---[Official Documentation](https://tweaked.cc/module/http.html#v:websocket)
 function http.websocket(url, headers) end
 
+---Open a websocket
+---@param request WEBSOCKET_OPTIONS Options for the websocket connection
+---@return Websocket|false websocket The websocket connection object or false if it failed to connect
+---@return string message Why the websocket failed to connect
+---## Request Parameter Shape
+---```
+---request = {
+---    url: string, -- The URL of the websocket to connect to. Should use the `ws://` or `wss://` protocol
+---    headers?: {[string] = string}, -- Headers to send for the handshake
+---    timeout?: number -- The amount of seconds to wait, before potentionally timing out
+---}
+---```
+------
+---[Official Documentation](https://tweaked.cc/module/http.html#v:websocket)
+function http.websocket(request) end
+
 ---Asynchronously open a websocket
 ---
 ---Returns immediately and a `websocket_success` or `websocket_failure` event will be fired when the request is completed
