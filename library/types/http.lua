@@ -92,3 +92,5 @@
 ---| '"PATCH"'
 
 ---@alias HTTP_REQUEST {url: string, body?: string, headers?: table<HTTP_REQUEST_HEADERS, string>, binary?: boolean, method?: HTTP_METHOD, redirect?: boolean}
+
+---@alias WEBSOCKET_OPTIONS {url: string, headers?: table<string, string>, timeout?: number}
