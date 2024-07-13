@@ -112,4 +112,4 @@ function Drive.ejectDisk() end
 ---
 ------
 ---[Official Documentation](https://tweaked.cc/peripheral/drive.html#v:getDiskID)
-function Drive.getID() end
+function Drive.getDiskID() end
