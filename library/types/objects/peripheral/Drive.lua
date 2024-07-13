@@ -33,7 +33,7 @@ function Drive.isDiskPresent() end
 function Drive.getDiskLabel() end
 
 ---Set the label of an inserted item.
----@param label string The new value for the label
+---@param label? string The new value for the label
 ---Supports: 💾💿🖥️
 ---
 ------
