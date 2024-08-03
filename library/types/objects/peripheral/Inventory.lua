@@ -23,7 +23,7 @@ function Inventory.size() end
 ---
 ---The returned table is sparse, and so empty slots will be nil - it is
 ---recommended to loop over using pairs rather than ipairs.
----@return itemList list The list of items in this inventory
+---@return ccTweaked.peripheral.itemList list The list of items in this inventory
 ---## Example
 ---```
 ---local chest = peripheral.find("minecraft:chest")

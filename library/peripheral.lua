@@ -57,15 +57,15 @@ function peripheral.getNames() end
 function peripheral.isPresent(name) end
 
 ---Get the type(s) of a peripheral
----@param peripheral string|ccTweaked.peripheral.computerSide|wrappedPeripheral The name/side or wrapped instance of a peripheral to get the type(s) of
----@return peripheralType ... The peripheral's types or `nil` if one is not present
+---@param peripheral string|ccTweaked.peripheral.computerSide|ccTweaked.peripheral.wrappedPeripheral The name/side or wrapped instance of a peripheral to get the type(s) of
+---@return ccTweaked.peripheral.peripheralType ... The peripheral's types or `nil` if one is not present
 ------
 ---[Official Documentation](https://tweaked.cc/module/peripheral.html#v:getType)
 function peripheral.getType(peripheral) end
 
 ---Check that a peripheral has a given type
----@param peripheral string|ccTweaked.peripheral.computerSide|wrappedPeripheral The name/side or wrapped instance of a peripheral to check the type of
----@param peripheralType peripheralType The type to check
+---@param peripheral string|ccTweaked.peripheral.computerSide|ccTweaked.peripheral.wrappedPeripheral The name/side or wrapped instance of a peripheral to check the type of
+---@param peripheralType ccTweaked.peripheral.peripheralType The type to check
 ---@return boolean|nil hasType If the peripheral has the given type or `nil` if it is not present
 ------
 ---[Official Documentation](https://tweaked.cc/module/peripheral.html#v:hasType)
@@ -79,7 +79,7 @@ function peripheral.hasType(peripheral, peripheralType) end
 function peripheral.getMethods(name) end
 
 ---Get the name of a wrapped peripheral
----@param peripheral wrappedPeripheral The peripheral to get the name of
+---@param peripheral ccTweaked.peripheral.wrappedPeripheral The peripheral to get the name of
 ---@return string name The name of the peripheral
 ------
 ---[Official Documentation](https://tweaked.cc/module/peripheral.html#v:getName)
@@ -96,15 +96,15 @@ function peripheral.call(name, method, ...) end
 
 ---Get a table containing all methods available on a peripheral
 ---@param name string|ccTweaked.peripheral.computerSide The name of the peripheral to wrap
----@return wrappedPeripheral|nil wrappedPeripheral The table containing the peripheral's methods or `nil` if the peripheral does not exist
+---@return ccTweaked.peripheral.wrappedPeripheral|nil wrappedPeripheral The table containing the peripheral's methods or `nil` if the peripheral does not exist
 ------
 ---[Official Documentation](https://tweaked.cc/module/peripheral.html#v:wrap)
 function peripheral.wrap(name) end
 
 ---Find all peripherals of a given type and return them wrapped
----@param peripheralType peripheralType The type of peripheral to find
----@param filter? fun(name: string, wrapped: wrappedPeripheral): boolean A filter function that should return if the peripheral should be included in the result
----@return wrappedPeripheral[] wrappedPeripherals The wrapped peripherals that were found, if any
+---@param peripheralType ccTweaked.peripheral.peripheralType The type of peripheral to find
+---@param filter? fun(name: string, wrapped: ccTweaked.peripheral.wrappedPeripheral): boolean A filter function that should return if the peripheral should be included in the result
+---@return ccTweaked.peripheral.wrappedPeripheral[] wrappedPeripherals The wrapped peripherals that were found, if any
 ---## Example
 ---```
 ---local monitors = { peripheral.find("monitor") }

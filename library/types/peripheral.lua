@@ -8,7 +8,7 @@
 ---| '"front"'
 ---| '"back"'
 
----@alias peripheralType
+---@alias ccTweaked.peripheral.peripheralType
 ---| '"command"'
 ---| '"computer"'
 ---| '"drive"'
@@ -21,11 +21,11 @@
 ---| '"inventory"'
 ---| string
 
----@alias wrappedPeripheral ccTweaked.peripheral.Command|ccTweaked.peripheral.Computer|ccTweaked.peripheral.Drive|ccTweaked.peripheral.EnergyStorage|ccTweaked.peripheral.FluidStorage|ccTweaked.peripheral.Inventory|ccTweaked.peripheral.Modem|ccTweaked.peripheral.Monitor|ccTweaked.peripheral.Printer|ccTweaked.peripheral.Speaker|ccTweaked.peripheral.WiredModem
+---@alias ccTweaked.peripheral.wrappedPeripheral ccTweaked.peripheral.Command|ccTweaked.peripheral.Computer|ccTweaked.peripheral.Drive|ccTweaked.peripheral.EnergyStorage|ccTweaked.peripheral.FluidStorage|ccTweaked.peripheral.Inventory|ccTweaked.peripheral.Modem|ccTweaked.peripheral.Monitor|ccTweaked.peripheral.Printer|ccTweaked.peripheral.Speaker|ccTweaked.peripheral.WiredModem
 
----@alias channel integer A channel to be used with a modem (0 - 65535)
+---@alias ccTweaked.peripheral.channel integer A channel to be used with a modem (0 - 65535)
 
----@alias instrument
+---@alias ccTweaked.peripheral.instrument
 ---| '"harp"'
 ---| '"basedrum"'
 ---| '"snare"'
@@ -43,7 +43,7 @@
 ---| '"banjo"'
 ---| '"pling"'
 
----@alias soundEffect
+---@alias ccTweaked.peripheral.soundEffect
 ---| '"ambient.basalt_deltas.additions"'
 ---| '"ambient.basalt_deltas.loop"'
 ---| '"ambient.basalt_deltas.mood"'
@@ -1030,9 +1030,9 @@
 ---| '"weather.rain"'
 ---| '"weather.rain.above"'
 
----@alias itemList table<number, item>
+---@alias ccTweaked.peripheral.itemList table<number, ccTweaked.peripheral.item>
 
----@class item
+---@class ccTweaked.peripheral.item
 ---@field name string The item name
 ---@field count integer The number of this item present
 ---@field nbt string|nil This item's Named Binary Tag

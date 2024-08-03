@@ -22,7 +22,7 @@ Modem = {}
 ---A channel must be open in order to receive messages on it
 ---
 ---Modem can have 128 channels open at one time
----@param channel channel The channel to open (0 - 65535)
+---@param channel ccTweaked.peripheral.channel The channel to open (0 - 65535)
 ---@throws If the `channel` is out of range
 ---@throws If there are too many open channels
 ------
@@ -30,7 +30,7 @@ Modem = {}
 function Modem.open(channel) end
 
 ---Check if a channel is open or not
----@param channel channel The channel to check (0 - 65535)
+---@param channel ccTweaked.peripheral.channel The channel to check (0 - 65535)
 ---@return boolean isOpen If the channel is open
 ---@throws If the `channel` is out of range
 ------
@@ -38,7 +38,7 @@ function Modem.open(channel) end
 function Modem.isOpen(channel) end
 
 ---Close an open channel so that it no longer receives messages
----@param channel channel The channel to close (0 - 65535)
+---@param channel ccTweaked.peripheral.channel The channel to close (0 - 65535)
 ---@throws If the `channel` is out of range
 ------
 ---[Official Documentation](https://tweaked.cc/peripheral/modem.html#v:close)
@@ -54,8 +54,8 @@ function Modem.closeAll() end
 ---
 ---Modems listening on the specified channel will queue a `modem_message` event
 ---on any parent computers
----@param channel channel The channel to send the message on (does not need to be open)
----@param replyChannel channel The channel that responses should be sent on. This can be the same channel, but it must be opened on this computer in order to receive the replies
+---@param channel ccTweaked.peripheral.channel The channel to send the message on (does not need to be open)
+---@param replyChannel ccTweaked.peripheral.channel The channel that responses should be sent on. This can be the same channel, but it must be opened on this computer in order to receive the replies
 ---@param payload boolean|string|number|table The payload of the message to send
 ---@throws If the channel is out of range
 ---## Example

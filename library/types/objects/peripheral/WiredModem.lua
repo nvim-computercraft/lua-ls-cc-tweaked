@@ -34,14 +34,14 @@ function WiredModem.isPresentRemote(name) end
 
 ---Get the type of a peripheral on this wired network
 ---@param name string The peripheral's name
----@return peripheralType|nil type The peripheral's type or `nil` if it is not present
+---@return ccTweaked.peripheral.peripheralType|nil type The peripheral's type or `nil` if it is not present
 ------
 ---[Official Documentation](https://tweaked.cc/peripheral/modem.html#v:getTypeRemote)
 function WiredModem.getTypeRemote(name) end
 
 ---Check that a peripheral is of a given type
 ---@param name string The peripheral's name
----@param type peripheralType The type to check
+---@param type ccTweaked.peripheral.peripheralType The type to check
 ---@return boolean|nil isType If a peripheral has a given type or `nil` if it is not present
 ------
 ---[Official Documentation](https://tweaked.cc/peripheral/modem.html#v:hasTypeRemote)
