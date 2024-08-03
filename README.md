@@ -32,4 +32,5 @@ Trigger cases:
 
 After applying the workspace, you should have full autocompletion and diagnostics.
 
-> Note: CC: Tweaked has some [seriously cursed](https://tweaked.cc/reference/feature_compat.html) support for Lua features, thus, the environment is a little messy and is not currently emulated as accurately as possible. As time goes on, I can figure out what is and isn't supported in CC:Tweaked and remove unsupported features using `config.json` from the built-in libraries of Sumneko's Lua extension.
+> [!NOTE]
+> CC: Tweaked has some [seriously cursed](https://tweaked.cc/reference/feature_compat.html) support for Lua features, thus, the environment is a little messy and is not currently emulated as accurately as possible. As time goes on, we can figure out what is and isn't supported in CC:Tweaked and remove unsupported features using `config.json` from the built-in libraries of Sumneko's Lua extension.
