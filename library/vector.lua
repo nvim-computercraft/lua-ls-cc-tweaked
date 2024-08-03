@@ -12,7 +12,7 @@ vector = {}
 ---@param x number The x coordinate or direction
 ---@param y number The y coordinate or direction
 ---@param z number The z coordinate or direction
----@return Vector vector A new `Vector` object
+---@return ccTweaked.Vector vector A new `Vector` object
 ------
 ---[Official Documentation](https://tweaked.cc/module/vector.html#v:new)
 function vector.new(x, y, z) end

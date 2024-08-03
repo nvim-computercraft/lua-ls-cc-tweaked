@@ -1,4 +1,4 @@
----@alias HTTP_REQUEST_HEADERS string
+---@alias ccTweaked.http.HTTP_REQUEST_HEADERS string
 ---| '"A-IM"'
 ---| '"Accept"'
 ---| '"Accept-Charset"'
@@ -35,7 +35,7 @@
 ---| '"Via"'
 ---| '"Warning"'
 
----@alias HTTP_RESPONSE_HEADERS string
+---@alias ccTweaked.http.HTTP_RESPONSE_HEADERS string
 ---| '"Access-Control-Allow-Origin"'
 ---| '"Access-Control-Allow-Credentials"'
 ---| '"Access-Control-Expose-Headers"'
@@ -80,7 +80,7 @@
 ---| '"Warning"'
 ---| '"WWW-Authenticate"'
 
----@alias HTTP_METHOD
+---@alias ccTweaked.http.HTTP_METHOD
 ---| '"GET"'
 ---| '"HEAD"'
 ---| '"POST"'
@@ -91,6 +91,6 @@
 ---| '"TRACE"'
 ---| '"PATCH"'
 
----@alias HTTP_REQUEST {url: string, body?: string, headers?: table<HTTP_REQUEST_HEADERS, string>, binary?: boolean, method?: HTTP_METHOD, redirect?: boolean}
+---@alias ccTweaked.http.HTTP_REQUEST {url: string, body?: string, headers?: table<ccTweaked.http.HTTP_REQUEST_HEADERS, string>, binary?: boolean, method?: ccTweaked.http.HTTP_METHOD, redirect?: boolean}
 
----@alias WEBSOCKET_OPTIONS {url: string, headers?: table<string, string>, timeout?: number}
+---@alias ccTweaked.http.WEBSOCKET_OPTIONS {url: string, headers?: table<string, string>, timeout?: number}

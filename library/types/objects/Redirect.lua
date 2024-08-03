@@ -1,7 +1,7 @@
 ---@meta
 
 ---A base class for all objects that interact with a terminal (e.g. `term` and monitors)
----@class Redirect
+---@class ccTweaked.term.Redirect
 Redirect = {}
 
 ---Write `text` at the current cursor position, moving the cursor to the end of the text
@@ -63,25 +63,25 @@ function Redirect.clear() end
 function Redirect.clearLine() end
 
 ---Get the current text color that text would be drawn in
----@return color textColor The current text color
+---@return ccTweaked.colors.color textColor The current text color
 ------
 ---[Official Documentation](https://tweaked.cc/module/term.html#ty:Redirect:getTextColor)
 function Redirect.getTextColor() end
 
 ---Get the current text colour that text would be drawn in
----@return color textColour The current text colour
+---@return ccTweaked.colors.color textColour The current text colour
 ------
 ---[Official Documentation](https://tweaked.cc/module/term.html#ty:Redirect:getTextColour)
 function Redirect.getTextColour() end
 
 ---Set the colour that text should be drawn in
----@param colour color The new colour text should be drawn in
+---@param colour ccTweaked.colors.color The new colour text should be drawn in
 ------
 ---[Official Documentation](https://tweaked.cc/module/term.html#ty:Redirect:setTextColour)
 function Redirect.setTextColour(colour) end
 
 ---Set the color that text should be drawn in
----@param color color The new color text should be drawn in
+---@param color ccTweaked.colors.color The new color text should be drawn in
 ------
 ---[Official Documentation](https://tweaked.cc/module/term.html#ty:Redirect:setTextColor)
 function Redirect.setTextColor(color) end
@@ -89,7 +89,7 @@ function Redirect.setTextColor(color) end
 ---Get the current background colour
 ---
 ---This is used when writing text and clearing the terminal
----@return color backgroundColour The current background colour
+---@return ccTweaked.colors.color backgroundColour The current background colour
 ------
 ---[Official Documentation](https://tweaked.cc/module/term.html#ty:Redirect:getBackgroundColour)
 function Redirect.getBackgroundColour() end
@@ -97,7 +97,7 @@ function Redirect.getBackgroundColour() end
 ---Get the current background color
 ---
 ---This is used when writing text and clearing the terminal
----@return color backgroundColor The current background color
+---@return ccTweaked.colors.color backgroundColor The current background color
 ------
 ---[Official Documentation](https://tweaked.cc/module/term.html#ty:Redirect:getBackgroundColor)
 function Redirect.getBackgroundColor() end
@@ -105,7 +105,7 @@ function Redirect.getBackgroundColor() end
 ---Set the current background colour
 ---
 ---This is used when writing text and clearing the terminal
----@param colour color The new background colour that should be used
+---@param colour ccTweaked.colors.color The new background colour that should be used
 ------
 ---[Official Documentation](https://tweaked.cc/module/term.html#ty:Redirect:setBackgroundColour)
 function Redirect.setBackgroundColour(colour) end
@@ -113,7 +113,7 @@ function Redirect.setBackgroundColour(colour) end
 ---Set the current background color
 ---
 ---This is used when writing text and clearing the terminal
----@param color color The new background color that should be used
+---@param color ccTweaked.colors.color The new background color that should be used
 ------
 ---[Official Documentation](https://tweaked.cc/module/term.html#ty:Redirect:setBackgroundColor)
 function Redirect.setBackgroundColor(color) end
@@ -160,7 +160,7 @@ function Redirect.blit(text, textColor, backgroundColor) end
 ---While you still can't have more than 16 colours, you can change what values
 ---are available. For example, you can change `colors.red` to `#FF0000` for it to
 ---be *more* red
----@param index color The colour that should be changed
+---@param index ccTweaked.colors.color The colour that should be changed
 ---@param colour integer A 24 bit integer representing the RGB value of a colour
 ---## Example
 ---```
@@ -175,7 +175,7 @@ function Redirect.setPaletteColour(index, colour) end
 ---While you still can't have more than 16 colours, you can change what values
 ---are available. For example, you can change `colors.red` to `1, 0, 0` for it to
 ---be *more* red
----@param index color The colour that should be changed
+---@param index ccTweaked.colors.color The colour that should be changed
 ---@param r number The red channel value
 ---@param g number The green channel value
 ---@param b number The blue channel value
@@ -192,7 +192,7 @@ function Redirect.setPaletteColour(index, r, g, b) end
 ---While you still can't have more than 16 colors, you can change what values
 ---are available. For example, you can change `colors.red` to `#FF0000` for it to
 ---be *more* red
----@param index color The color that should be changed
+---@param index ccTweaked.colors.color The color that should be changed
 ---@param color integer A 24 bit integer representing the RGB value of a color
 ---## Example
 ---```
@@ -207,7 +207,7 @@ function Redirect.setPaletteColor(index, color) end
 ---While you still can't have more than 16 colors, you can change what values
 ---are available. For example, you can change `colors.red` to `1, 0, 0` for it to
 ---be *more* red
----@param index color The color that should be changed
+---@param index ccTweaked.colors.color The color that should be changed
 ---@param r number The red channel value
 ---@param g number The green channel value
 ---@param b number The blue channel value
@@ -220,7 +220,7 @@ function Redirect.setPaletteColor(index, color) end
 function Redirect.setPaletteColor(index, r, g, b) end
 
 ---Get the current colour value for a specific colour from the palette
----@param colour color The colour to get the value of
+---@param colour ccTweaked.colors.color The colour to get the value of
 ---@return number red The red channel (0 - 1)
 ---@return number green The green channel (0 - 1)
 ---@return number blue The blue channel (0 - 1)
@@ -229,7 +229,7 @@ function Redirect.setPaletteColor(index, r, g, b) end
 function Redirect.getPaletteColour(colour) end
 
 ---Get the current color value for a specific color from the palette
----@param color color The color to get the value of
+---@param color ccTweaked.colors.color The color to get the value of
 ---@return number red The red channel (0 - 1)
 ---@return number green The green channel (0 - 1)
 ---@return number blue The blue channel (0 - 1)

@@ -1,6 +1,6 @@
 ---@meta
 
----@alias computerSide
+---@alias ccTweaked.peripheral.computerSide
 ---| '"top"'
 ---| '"bottom"'
 ---| '"right"'
@@ -21,7 +21,7 @@
 ---| '"inventory"'
 ---| string
 
----@alias wrappedPeripheral Command|Computer|Drive|EnergyStorage|FluidStorage|Inventory|Modem|Monitor|Printer|Speaker|WiredModem
+---@alias wrappedPeripheral ccTweaked.peripheral.Command|ccTweaked.peripheral.Computer|ccTweaked.peripheral.Drive|ccTweaked.peripheral.EnergyStorage|ccTweaked.peripheral.FluidStorage|ccTweaked.peripheral.Inventory|ccTweaked.peripheral.Modem|ccTweaked.peripheral.Monitor|ccTweaked.peripheral.Printer|ccTweaked.peripheral.Speaker|ccTweaked.peripheral.WiredModem
 
 ---@alias channel integer A channel to be used with a modem (0 - 65535)
 

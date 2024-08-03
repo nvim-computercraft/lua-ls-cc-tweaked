@@ -12,7 +12,7 @@ settings = {}
 
 ---Define a new setting
 ---@param name string The name of this option
----@param options? settingOptions The options of this setting
+---@param options? ccTweaked.settings.settingOptions The options of this setting
 ------
 ---[Official Documentation](https://tweaked.cc/module/settings.html#v:define)
 function settings.define(name, options) end
@@ -73,7 +73,7 @@ function settings.getNames() end
 ---
 ---The two configurations will be merged where conflicting entries will be
 ---overwritten by this new file
----@param path? path The path to load the settings from (defaults to `.settings`)
+---@param path? ccTweaked.fs.path The path to load the settings from (defaults to `.settings`)
 ---@return boolean success If the file was successfully loaded. This could fail due to not having permission to read the file, the file doesn't exist, or it is corrupted
 ------
 ---[Official Documentation](https://tweaked.cc/module/settings.html#v:load)
@@ -82,6 +82,6 @@ function settings.load(path) end
 ---Save settings to a file
 ---
 ---This will completely overwrite the target file
----@param path path? The path to save the file to (defaults to `.settings`)
+---@param path ccTweaked.fs.path? The path to save the file to (defaults to `.settings`)
 ---@return boolean success If the settings were successfully saved
 function settings.save(path) end

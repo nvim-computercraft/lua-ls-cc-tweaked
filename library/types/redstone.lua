@@ -1,9 +1,9 @@
 ---@meta
 
----@class computerSidesTable
+---@class ccTweaked.redstone.computerSidesTable
 computerSidesTable = { "top", "bottom", "left", "right", "front", "back" }
 
----@alias signalStrength
+---@alias ccTweaked.redstone.signalStrength
 ---| 0
 ---| 1
 ---| 2

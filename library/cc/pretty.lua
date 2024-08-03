@@ -11,61 +11,61 @@
 pretty = {}
 
 ---A document contains formatted text with multiple possible layouts.
----@class Doc
+---@class ccTweaked.cc.pretty.Doc
 
 ---An empty document
----@type Doc
+---@type ccTweaked.cc.pretty.Doc
 ------
 ---[Official Documentation](https://tweaked.cc/library/cc.pretty.html#v:empty)
 pretty.empty = nil
 
 ---A document with a single space in it
----@type Doc
+---@type ccTweaked.cc.pretty.Doc
 ------
 ---[Official Documentation](https://tweaked.cc/library/cc.pretty.html#v:space)
 pretty.space = nil
 
 ---A line break, however when in a group and everything can fit on one line, is
 ---replaced with `empty`
----@type Doc
+---@type ccTweaked.cc.pretty.Doc
 ------
 ---[Official Documentation](https://tweaked.cc/library/cc.pretty.html#v:line)
 pretty.line = nil
 
 ---A line break, however when in a group and everything can fit on one line, is
 ---replaced with `space`
----@type Doc
+---@type ccTweaked.cc.pretty.Doc
 ------
 ---[Official Documentation](https://tweaked.cc/library/cc.pretty.html#v:space_line)
 pretty.space_line = nil
 
 ---Create a new `Doc` from a string
 ---@param text string The string to construct a document from
----@param color? color The color to print the text in. Defaults to the current color
----@return Doc doc The document containing the provided text
+---@param color? ccTweaked.colors.color The color to print the text in. Defaults to the current color
+---@return ccTweaked.cc.pretty.Doc doc The document containing the provided text
 ------
 ---[Official Documentation](https://tweaked.cc/library/cc.pretty.html#v:text)
 function pretty.text(text, color) end
 
 ---Concatenate multiple documents into one
----@param ... Doc|string The documents to concat
----@return Doc doc The concatenated document
+---@param ... ccTweaked.cc.pretty.Doc|string The documents to concat
+---@return ccTweaked.cc.pretty.Doc doc The concatenated document
 ------
 ---[Official Documentation](https://tweaked.cc/library/cc.pretty.html#v:concat)
 function pretty.concat(...) end
 
 ---Indents the following lines in the provided document using spaces
 ---@param depth integer The number of spaces to indent to
----@param doc Doc The document to indent
----@return Doc doc The nested document
+---@param doc ccTweaked.cc.pretty.Doc The document to indent
+---@return ccTweaked.cc.pretty.Doc doc The nested document
 ------
 ---[Official Documentation](https://tweaked.cc/library/cc.pretty.html#v:nest)
 function pretty.nest(depth, doc) end
 
 ---Build a document that is displayed on a single line if there is enough room
 ---or as normal if not
----@param doc Doc The document to make a group
----@return Doc doc The grouped document
+---@param doc ccTweaked.cc.pretty.Doc The document to make a group
+---@return ccTweaked.cc.pretty.Doc doc The grouped document
 ---## Example
 ---```
 ---local pretty = require("cc.pretty")
@@ -81,21 +81,21 @@ function pretty.nest(depth, doc) end
 function pretty.group(doc) end
 
 ---Write a doc to the terminal
----@param doc Doc The document to write
+---@param doc ccTweaked.cc.pretty.Doc The document to write
 ---@param maxWidth? number The maximum fraction of the screen width that can be written to before wrapping. Defaults to 0.6
 ------
 ---[Official Documentation](https://tweaked.cc/library/cc.pretty.html#v:write)
 function pretty.write(doc, maxWidth) end
 
 ---Print a doc to the terminal with a trailing new line
----@param doc Doc The document to write
+---@param doc ccTweaked.cc.pretty.Doc The document to write
 ---@param maxWidth? number The maximum fraction of the screen width that can be written to before wrapping. Defaults to 0.6
 ------
 ---[Official Documentation](https://tweaked.cc/library/cc.pretty.html#v:print)
 function pretty.print(doc, maxWidth) end
 
 ---Render a document into a string
----@param doc Doc The document to render
+---@param doc ccTweaked.cc.pretty.Doc The document to render
 ---@param width? number The maximum width of this document. Long strings will not be wrapped to fit this width, it is just used for finding the best layout
 ---@param maxWidth? number The maximum fraction of the screen width that can be written to before wrapping. Defaults to 0.6
 ---@return string rendered The rendered string
@@ -110,7 +110,7 @@ function pretty.render(doc, width, maxWidth) end
 ---Convert an object into a document that can then be displayed with `write` or `print`
 ---@param obj any The object to convert to a document
 ---@param options? prettyOptions Options for how certain things are displayed
----@return Doc doc The formatted document
+---@return ccTweaked.cc.pretty.Doc doc The formatted document
 ---## Example
 ---```
 ---local pretty = require "cc.pretty"

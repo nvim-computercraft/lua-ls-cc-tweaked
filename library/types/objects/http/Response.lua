@@ -1,7 +1,7 @@
 ---@meta
 
 ---A HTTP response. This provides the same methods as a file as well as some response-specific methods
----@class Response
+---@class ccTweaked.http.Response
 ------
 ---[Official Documentation](https://tweaked.cc/module/http.html#ty:Response)
 Response = {}
@@ -17,7 +17,7 @@ function Response.getResponseCode() end
 ---
 ---If multiple headers are sent with the same name, they will be combined with a
 ---comma
----@return table<HTTP_RESPONSE_HEADERS, string>
+---@return table<ccTweaked.http.HTTP_RESPONSE_HEADERS, string>
 ------
 ---[Official Documentation](https://tweaked.cc/module/http.html#ty:Response:getResponseHeaders)
 function Response.getResponseHeaders() end

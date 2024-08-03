@@ -14,7 +14,7 @@
 ---the computer's ID
 ------
 ---[Official Documentation](https://tweaked.cc/peripheral/modem.html)
----@class Modem
+---@class ccTweaked.peripheral.Modem
 Modem = {}
 
 ---Open a channel on a modem

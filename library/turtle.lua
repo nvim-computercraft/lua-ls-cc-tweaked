@@ -69,7 +69,7 @@ function turtle.turnRight() end
 ---
 ---This requires a tool capable of breaking the block. Diamond pickaxes can
 ---break any block but other tools are more limited
----@param side? turtleSide The specific tool to use
+---@param side? ccTweaked.turtle.turtleSide The specific tool to use
 ---@return boolean success If a block was broken
 ---@return string|nil errorMessage The reason no block was broken
 ------
@@ -80,7 +80,7 @@ function turtle.dig(side) end
 ---
 ---This requires a tool capable of breaking the block. Diamond pickaxes can
 ---break any block but other tools are more limited
----@param side? turtleSide The specific tool to use
+---@param side? ccTweaked.turtle.turtleSide The specific tool to use
 ---@return boolean success If a block was broken
 ---@return string|nil errorMessage The reason no block was broken
 ------
@@ -91,7 +91,7 @@ function turtle.digUp(side) end
 ---
 ---This requires a tool capable of breaking the block. Diamond pickaxes can
 ---break any block but other tools are more limited
----@param side? turtleSide The specific tool to use
+---@param side? ccTweaked.turtle.turtleSide The specific tool to use
 ---@return boolean success If a block was broken
 ---@return string|nil errorMessage The reason no block was broken
 ------
@@ -165,7 +165,7 @@ function turtle.dropDown(count) end
 ---
 ---This determines what slot `turtle.drop()`, `turtle.place()`, and others act
 ---on
----@param slot turtleSlot The inventory slot to select
+---@param slot ccTweaked.turtle.turtleSlot The inventory slot to select
 ---@return boolean success If the slot has been selected (1 - 16)
 ---@throws If `slot` is out of range
 ------
@@ -173,7 +173,7 @@ function turtle.dropDown(count) end
 function turtle.select(slot) end
 
 ---Get the number of items in the given slot
----@param slot? turtleSlot The slot to check (1 - 16, default is the selected slot)
+---@param slot? ccTweaked.turtle.turtleSlot The slot to check (1 - 16, default is the selected slot)
 ---@return integer count The number of items in the slot
 ---@throws If `slot` is out of range
 ------
@@ -181,7 +181,7 @@ function turtle.select(slot) end
 function turtle.getItemCount(slot) end
 
 ---Get the remaining space in a stack in a slot
----@param slot? turtleSlot The slot to check (1 - 16, default is the selected slot)
+---@param slot? ccTweaked.turtle.turtleSlot The slot to check (1 - 16, default is the selected slot)
 ---@return integer count The number of items that can fit in this stack
 ---@throws If `slot` is out of range
 ------
@@ -228,7 +228,7 @@ function turtle.compareUp() end
 function turtle.compareDown() end
 
 ---Attack the entity in front of the turtle
----@param side? turtleSide The specific tool to use to attack
+---@param side? ccTweaked.turtle.turtleSide The specific tool to use to attack
 ---@return boolean attacked Whether an entity was attacked
 ---@return string|nil errorMessage The reason nothing was attacked
 ------
@@ -236,7 +236,7 @@ function turtle.compareDown() end
 function turtle.attack(side) end
 
 ---Attack the entity above the turtle
----@param side? turtleSide The specific tool to use to attack
+---@param side? ccTweaked.turtle.turtleSide The specific tool to use to attack
 ---@return boolean attacked Whether an entity was attacked
 ---@return string|nil errorMessage The reason nothing was attacked
 ------
@@ -244,7 +244,7 @@ function turtle.attack(side) end
 function turtle.attackUp(side) end
 
 ---Attack the entity below the turtle
----@param side? turtleSide The specific tool to use to attack
+---@param side? ccTweaked.turtle.turtleSide The specific tool to use to attack
 ---@return boolean attacked Whether an entity was attacked
 ---@return string|nil errorMessage The reason nothing was attacked
 ------
@@ -305,7 +305,7 @@ function turtle.getFuelLevel() end
 function turtle.refuel(count) end
 
 ---Compare the item in the currently selected slot to an item in another slot
----@param slot turtleSlot The slot to compare to
+---@param slot ccTweaked.turtle.turtleSlot The slot to compare to
 ---@return boolean areSame If the two items are the same
 ---@throws If the slot is out of range
 ------
@@ -313,7 +313,7 @@ function turtle.refuel(count) end
 function turtle.compareTo(slot) end
 
 ---Move an item from the selected slot to another one
----@param slot turtleSlot The slot to move the item to
+---@param slot ccTweaked.turtle.turtleSlot The slot to move the item to
 ---@param count? integer The maximum number of items in the stack to move
 ---@return boolean success If an item was successfully moved
 ---@throws If the slot is out of range
@@ -363,29 +363,29 @@ function turtle.equipRight() end
 
 ---Get information about the block in front of the turtle
 ---@return boolean blockPresent If there is a block in front of the turtle
----@return inspectInfo|string info Info about the block or a message explaining that there is no block
+---@return ccTweaked.turtle.inspectInfo|string info Info about the block or a message explaining that there is no block
 ------
 ---[Official Documentation](https://tweaked.cc/module/turtle.html#v:inspect)
 function turtle.inspect() end
 
 ---Get information about the block above the turtle
 ---@return boolean blockPresent If there is a block above the turtle
----@return inspectInfo|string info Info about the block or a message explaining that there is no block
+---@return ccTweaked.turtle.inspectInfo|string info Info about the block or a message explaining that there is no block
 ------
 ---[Official Documentation](https://tweaked.cc/module/turtle.html#v:inspectUp)
 function turtle.inspectUp() end
 
 ---Get information about the block below the turtle
 ---@return boolean blockPresent If there is a block below the turtle
----@return inspectInfo|string info Info about the block or a message explaining that there is no block
+---@return ccTweaked.turtle.inspectInfo|string info Info about the block or a message explaining that there is no block
 ------
 ---[Official Documentation](https://tweaked.cc/module/turtle.html#v:inspectDown)
 function turtle.inspectDown() end
 
 ---Get information about the items in the given slot
----@param slot? turtleSlot The slot to get information about (defaults to the currently selected slot)
+---@param slot? ccTweaked.turtle.turtleSlot The slot to get information about (defaults to the currently selected slot)
 ---@param detailed? boolean Whether to get more info on the block. This results in much more info at the cost of execution time
----@return nil|turtleDetails|turtleDetailsDetailed info Information about `slot` or `nil` if it is empty
+---@return nil|ccTweaked.turtle.turtleDetails|ccTweaked.turtle.turtleDetailsDetailed info Information about `slot` or `nil` if it is empty
 ---@throws If the slot is out of range
 ------
 ---[Official Documentation](https://tweaked.cc/module/turtle.html#v:getItemDetail)

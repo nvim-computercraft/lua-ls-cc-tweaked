@@ -28,7 +28,7 @@ fs = {}
 ---❌
 ---- `/rom/apis`
 ---- `/disc/helloWorld.lua`
----@param path path The path to check
+---@param path ccTweaked.fs.path The path to check
 ---@return boolean isRoot If the specified path is mounted to the root
 ---@throws If the path does not exist
 ------
@@ -43,8 +43,8 @@ function fs.isDriveRoot(path) end
 ---`includeDirectories` to false will only suggest directories with a trailing
 ---slash (meaning only directories with content will be suggested but are not
 ---meant to be the final target)
----@param path path The path to complete
----@param source path The path where further paths should be resolved from
+---@param path ccTweaked.fs.path The path to complete
+---@param source ccTweaked.fs.path The path where further paths should be resolved from
 ---@param includeFiles? boolean If filenames should be completed
 ---@param includeDirectories? boolean If empty directories should be completed
 ---@return string[]|table candidates
@@ -67,7 +67,7 @@ function fs.isDriveRoot(path) end
 function fs.complete(path, source, includeFiles, includeDirectories) end
 
 ---Get a list of files in a directory
----@param path path The path to the directory to check
+---@param path ccTweaked.fs.path The path to the directory to check
 ---@return string[]|table files
 ---@throws If the path doesn't exist
 ---@throws If the path is not a directory
@@ -76,8 +76,8 @@ function fs.complete(path, source, includeFiles, includeDirectories) end
 function fs.list(path) end
 
 ---Combine multiple components of a path into a single path
----@param start path The start of the path
----@vararg path|string Path components to combine
+---@param start ccTweaked.fs.path The start of the path
+---@vararg ccTweaked.fs.path|string Path components to combine
 ---@return string path The combined path
 ---@throws If arguments are invalid (e.g. are numbers)
 ---## Example
@@ -90,7 +90,7 @@ function fs.list(path) end
 function fs.combine(start, ...) end
 
 ---Get the filename component of a path
----@param path path The path to get the filename from
+---@param path ccTweaked.fs.path The path to get the filename from
 ---@return string filename The last component of a path (name of the file if the path points to a file)
 ---## Examples
 ---```
@@ -108,8 +108,8 @@ function fs.combine(start, ...) end
 function fs.getName(path) end
 
 ---Get the parent directory component of a path
----@param path path The path to get the parent directory from
----@return path|string parentDirectory The parent directory component of the path (all parent directories)
+---@param path ccTweaked.fs.path The path to get the parent directory from
+---@return ccTweaked.fs.path|string parentDirectory The parent directory component of the path (all parent directories)
 ---## Examples
 ---```
 ---fs.getDir("/rom/startup.lua")
@@ -126,7 +126,7 @@ function fs.getName(path) end
 function fs.getDir(path) end
 
 ---Get the size of a file
----@param path path The path to the file to get the size of
+---@param path ccTweaked.fs.path The path to the file to get the size of
 ---@return number bytes The size of the file in bytes. 0 if the path points to a directory
 ---@throws If the path doesn't exist
 ---## Examples
@@ -142,21 +142,21 @@ function fs.getDir(path) end
 function fs.getSize(path) end
 
 ---Get whether a path exists
----@param path path The path to check the existence of
+---@param path ccTweaked.fs.path The path to check the existence of
 ---@return boolean exists
 ------
 ---[Official Documentation](https://tweaked.cc/module/fs.html#v:exists)
 function fs.exists(path) end
 
 ---Get whether a path is a directory
----@param path path The path to check
+---@param path ccTweaked.fs.path The path to check
 ---@return boolean isDirectory If the path exists **and** is a directory
 ------
 ---[Official Documentation](https://tweaked.cc/module/fs.html#v:isDir)
 function fs.isDir(path) end
 
 ---Get whether a path is read-only
----@param path path The path to check
+---@param path ccTweaked.fs.path The path to check
 ---@return boolean isReadOnly If the path can only be read and not written to
 ---## Example
 ---```
@@ -168,7 +168,7 @@ function fs.isDir(path) end
 function fs.isReadOnly(path) end
 
 ---Create a directory, including any missing parents
----@param path path The path to (and including) the directory to create
+---@param path ccTweaked.fs.path The path to (and including) the directory to create
 ---@throws If target path could not be written to
 ------
 ---[Official Documentation](https://tweaked.cc/module/fs.html#v:makeDir)
@@ -178,8 +178,8 @@ function fs.makeDir(path) end
 ---
 ---Any missing parent directories at the specified destination are created as
 ---needed
----@param origin path The origin path to move
----@param destination path The destination path
+---@param origin ccTweaked.fs.path The origin path to move
+---@param destination ccTweaked.fs.path The destination path
 ---@throws If destination could not be written to
 ---## Examples
 ---```
@@ -197,8 +197,8 @@ function fs.makeDir(path) end
 function fs.move(origin, destination) end
 
 ---Copy a file/directory to another path
----@param origin path The origin path to copy
----@param destination path The destination path to copy to
+---@param origin ccTweaked.fs.path The origin path to copy
+---@param destination ccTweaked.fs.path The destination path to copy to
 ---@throws If destination could not be written to
 ---## Example
 ---```
@@ -214,16 +214,16 @@ function fs.copy(origin, destination) end
 ---
 ---❗Be **VERY** careful when deleting directories as you could easily delete a
 ---**LOT** of files by accident
----@param path path The path to delete
+---@param path ccTweaked.fs.path The path to delete
 ---@throws If file/directory cannot be deleted
 ------
 ---[Official Documentation](https://tweaked.cc/module/fs.html#v:delete)
 function fs.delete(path) end
 
 ---Opens a file for reading/writing
----@param path path The path to the file to open
----@param mode openMode The mode to open the file with
----@return ReadHandle|BinaryReadHandle|WriteHandle|BinaryWriteHandle|nil handler A file handler object or nil if the file does not exist or cannot be opened
+---@param path ccTweaked.fs.path The path to the file to open
+---@param mode ccTweaked.fs.openMode The mode to open the file with
+---@return ccTweaked.fs.ReadHandle|ccTweaked.fs.BinaryReadHandle|ccTweaked.fs.WriteHandle|ccTweaked.fs.BinaryWriteHandle|nil handler A file handler object or nil if the file does not exist or cannot be opened
 ---@return nil|string errorMessage Why the file cannot be opened
 ---@throws If an invalid mode was given
 ---## Example
@@ -237,7 +237,7 @@ function fs.delete(path) end
 function fs.open(path, mode) end
 
 ---Get the name of the mount that the path is located on
----@param path path The path to get the mount location of
+---@param path ccTweaked.fs.path The path to get the mount location of
 ---@return string mount The name of the mount location. `hdd` for local files and `rom` for files in the `/rom/` directory
 ---@throws If the path doesn't exist
 ------
@@ -245,7 +245,7 @@ function fs.open(path, mode) end
 function fs.getDrive(path) end
 
 ---Get the amount of free space on the mount that the specified path is located on
----@param path path A path that belongs to the desired mount
+---@param path ccTweaked.fs.path A path that belongs to the desired mount
 ---@return number|"unlimited" free The free space in bytes, `unlimited`, or 0 if read-only
 ---@throws If the path doesn't exist
 ------
@@ -266,7 +266,7 @@ function fs.getFreeSpace(path) end
 function fs.find(pattern) end
 
 ---Get the total capacity of the mount the path is located on, if available
----@param path path A path that is located on the desired mount
+---@param path ccTweaked.fs.path A path that is located on the desired mount
 ---@return number|nil capacity The capacity of the mount in bytes or `nil` if read-only
 ---@throws If the capacity could not be determined
 ------
@@ -274,8 +274,8 @@ function fs.find(pattern) end
 function fs.getCapacity(path) end
 
 ---Get attributes about a file/directory
----@param path path The path to the file/directory to get the attributes of
----@return fileAttributes attributes The attributes of the file/directory
+---@param path ccTweaked.fs.path The path to the file/directory to get the attributes of
+---@return ccTweaked.fs.fileAttributes attributes The attributes of the file/directory
 ---@throws If the path does not exist
 ------
 ---[Official Documentation](https://tweaked.cc/module/fs.html#v:attributes)

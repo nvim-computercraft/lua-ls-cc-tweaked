@@ -9,7 +9,7 @@
 ---
 ------
 ---[Official Documentation](https://tweaked.cc/peripheral/monitor.html)
----@class Monitor: Redirect
+---@class ccTweaked.peripheral.Monitor: ccTweaked.term.Redirect
 Monitor = {}
 
 ---Set the scale of text on this monitor. A larger scale will have a lower resolution but larger text

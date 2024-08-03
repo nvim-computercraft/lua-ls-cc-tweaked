@@ -33,7 +33,7 @@ function help.setPath(indexList) end
 
 ---Get the location of the help file for a topic
 ---@param topic string The topic to find
----@return path|nil path The path to the help file or `nil` if it cannot be found
+---@return ccTweaked.fs.path|nil path The path to the help file or `nil` if it cannot be found
 ---## Example
 ---```
 ---help.lookup("disk")

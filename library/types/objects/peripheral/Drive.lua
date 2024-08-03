@@ -12,7 +12,7 @@
 ---on. Likewise, when the disk is detached, a `disk_eject` event is fired.
 ------
 ---[Official Documentation](https://tweaked.cc/peripheral/drive.html)
----@class Drive
+---@class ccTweaked.peripheral.Drive
 Drive = {}
 
 ---Checks that an item is in the drive
@@ -51,7 +51,7 @@ function Drive.hasData() end
 
 ---Gets the path on this computer where the contents of the inserted item can be
 ---found
----@return path|nil path The path to the mount location or `nil` if the drive is empty or the inserted item cannot be mounted
+---@return ccTweaked.fs.path|nil path The path to the mount location or `nil` if the drive is empty or the inserted item cannot be mounted
 ---Supports: 💾💿🖥️
 ---
 ------

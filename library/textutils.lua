@@ -75,9 +75,9 @@ function textutils.pagedTabulate(...) end
 ------
 ---[Official Documentation](https://tweaked.cc/module/textutils.html#v:empty_json_array)
 textutils.empty_json_array = {
-	__tostring = function()
-		return "[]"
-	end,
+    __tostring = function()
+        return "[]"
+    end,
 }
 
 ---A table representing the JSON null value
@@ -87,9 +87,9 @@ textutils.empty_json_array = {
 ------
 ---[Official Documentation](https://tweaked.cc/module/textutils.html#v:json_null)
 textutils.json_null = {
-	__tostring = function()
-		return "null"
-	end,
+    __tostring = function()
+        return "null"
+    end,
 }
 
 ---@alias serializable string|number|table|boolean
@@ -97,7 +97,7 @@ textutils.json_null = {
 ---Get a textual representation of a Lua object, suitable for saving to a file or
 ---printing
 ---@param tbl serializable The object to convert
----@param options? serializationOptions
+---@param options? ccTweaked.textutils.serializationOptions
 ---@return string serialized The serialized representation
 ---@throws if the object is a function
 ---@throws If the table contains a function
@@ -109,7 +109,7 @@ function textutils.serialize(tbl, options) end
 ---Get a textual representation of a Lua object, suitable for saving to a file or
 ---printing
 ---@param t serializable The object to convert
----@param options? serializationOptions
+---@param options? ccTweaked.textutils.serializationOptions
 ---@return string serialised The serialised representation
 ---@throws if the object is a function
 ---@throws If the table contains a function
@@ -168,7 +168,7 @@ function textutils.serialiseJSON(tbl, NBTstyle) end
 
 ---Convert a serialized JSON string back into a Lua table
 ---@param str string The string to unserialize
----@param options? unserializeJSONOptions Options for unserializing
+---@param options? ccTweaked.textutils.unserializeJSONOptions Options for unserializing
 ---@return serializable|nil unserialized The unserialized object or `nil` if the object couldn't be unserialized
 ---@return string|nil errorMessage Why the object couldn't be unserialized
 ------
@@ -177,7 +177,7 @@ function textutils.unserializeJSON(str, options) end
 
 ---Convert a serialised JSON string back into a Lua table
 ---@param str string The string to unserialise
----@param options? unserializeJSONOptions Options for unserialising
+---@param options? ccTweaked.textutils.unserializeJSONOptions Options for unserialising
 ---@return serializable|nil unserialised The unserialised object or `nil` if the object couldn't be unserialised
 ---@return string|nil errorMessage Why the object couldn't be unserialised
 ------

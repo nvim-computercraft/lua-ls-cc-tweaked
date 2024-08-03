@@ -14,7 +14,7 @@ os = {}
 ---
 ---🚮 **Deprecated** due to it polluting the global namespace\
 ---You should instead use `require()` to load libraries/APIs
----@param path path Path to the file to load
+---@param path ccTweaked.fs.path Path to the file to load
 ---@return boolean success If the API was successfully loaded
 ------
 ---[Official Documentation](https://tweaked.cc/module/os.html#v:loadAPI)
@@ -37,8 +37,8 @@ function os.unloadAPI(name) end
 ---
 ---This works by yielding until it receives a vararg list where the first
 ---element matches the name of the event provided
----@param event event|string? The event to listen for
----@return event|string event The name of the event that fired
+---@param event ccTweaked.os.event|string? The event to listen for
+---@return ccTweaked.os.event|string event The name of the event that fired
 ---@return any ... Any values returned by the event
 ---## Example
 ---```
@@ -67,8 +67,8 @@ function os.pullEvent(event) end
 ---
 ---This works by yielding until it receives a vararg list where the first
 ---element matches the name of the event provided
----@param event event|string? The event to listen for
----@return event|string event The name of the event that fired
+---@param event ccTweaked.os.event|string? The event to listen for
+---@return ccTweaked.os.event|string event The name of the event that fired
 ---@return any ... Any values returned by the event
 ---## Example
 ---```
@@ -122,12 +122,12 @@ function os.version() end
 ------
 ---[Official Documentation](https://tweaked.cc/module/os.html#v:run)
 ---@param env table The environment to load the path under. For example, passing `_E` will pass the environment you are currently using.
----@param path path The path to the program to launch
+---@param path ccTweaked.fs.path The path to the program to launch
 ---@param ... any Additional arguments to pass to the program
 function os.run(env, path, ...) end
 
 ---Adds an event to the event queue that can later be listened to with `os.pullEvent()`
----@param name event|string The name of the event to queue
+---@param name ccTweaked.os.event|string The name of the event to queue
 ---@param ... any The parameters of the event that can be read later
 ---@triggers `any`
 ------
@@ -223,7 +223,7 @@ function os.clock() end
 ---This function can also be given the table from calling `os.date("*t")` in
 ---which case, this function returns a [UNIX
 ---timestamp](https://www.unixtimestamp.com/)
----@param locale? locale|dateTable The locale to get the time in
+---@param locale? ccTweaked.os.locale|ccTweaked.os.dateTable The locale to get the time in
 ---@return number time The hour of the selected locale or a UNIX timestamp depending on the value passed in
 ---@throws If an invald locale is passed in
 ---## Examples
@@ -247,7 +247,7 @@ function os.time(locale) end
 ---- `utc` - Get the number of days since 1 January 1970 in UTC time
 ---- `local` - Get the number of days since 1 January 1970 in the server's local timezone
 ---
----@param locale? locale
+---@param locale? ccTweaked.os.locale
 ---@return number days Value depends on `locale` passed in
 ---@throws If an invalid locale is passed
 ------
@@ -255,7 +255,7 @@ function os.time(locale) end
 function os.day(locale) end
 
 ---Get the number of milliseconds since an epoch
----@param locale locale The locale to get the epoch from
+---@param locale ccTweaked.os.locale The locale to get the epoch from
 ---@return number milliseconds Number of milliseconds since the selected epoch
 ---@throws If an invalid locale is passed
 ------
@@ -276,7 +276,7 @@ function os.epoch(locale) end
 ---1 January 1970) with date.
 ---@param format? string The format of the string to return. Defaults to `%c`
 ---@param time? number The time (in seconds) to convert to a string. Defaults to the current time
----@return string|dateTable
+---@return string|ccTweaked.os.dateTable
 ---@throws If an invalid format is passed
 ---## Examples
 ---### Get Date String

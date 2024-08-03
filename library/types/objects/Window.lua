@@ -1,6 +1,6 @@
 ---@meta
 
----@class Window: Redirect
+---@class Window: ccTweaked.term.Redirect
 Window = {}
 
 ---Get the buffered contents of a given line in this window
@@ -56,7 +56,7 @@ function Window.getPosition() end
 ---@param y number The new y position of this window
 ---@param w? number The new width of this window
 ---@param h? number The new height of this window
----@param parent? Redirect|Monitor The new `Redirect` that this window should be drawn to
+---@param parent? ccTweaked.term.Redirect|ccTweaked.peripheral.Monitor The new `Redirect` that this window should be drawn to
 ------
 ---[Official Documentation](https://tweaked.cc/module/window.html#ty:Window:reposition)
 function Window.reposition(x, y, w, h, parent) end
