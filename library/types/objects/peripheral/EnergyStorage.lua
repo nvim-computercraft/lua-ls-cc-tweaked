@@ -8,7 +8,7 @@
 ---
 ------
 ---[Official Documentation](https://tweaked.cc/generic_peripheral/energy_storage.html)
----@class EnergyStorage
+---@class ccTweaked.peripheral.EnergyStorage
 EnergyStorage = {}
 
 ---Get the energy of this block

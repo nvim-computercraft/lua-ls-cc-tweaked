@@ -4,7 +4,7 @@
 ---executed using a computer
 ------
 ---[Official Documentation](https://tweaked.cc/peripheral/command.html)
----@class Command
+---@class ccTweaked.peripheral.Command
 Command = {}
 
 ---Get the command that this command block will run

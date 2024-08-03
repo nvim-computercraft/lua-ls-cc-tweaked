@@ -14,7 +14,7 @@
 ---the computer's ID
 ------
 ---[Official Documentation](https://tweaked.cc/peripheral/modem.html)
----@class WiredModem: Modem
+---@class ccTweaked.peripheral.WiredModem: ccTweaked.peripheral.Modem
 WiredModem = {}
 
 ---List all peripherals on the wired network

@@ -4,7 +4,7 @@
 ---
 ------
 ---[Official Documentation](https://tweaked.cc/module/fs.html#ty:BinaryReadHandle)
----@class BinaryReadHandle
+---@class ccTweaked.fs.BinaryReadHandle
 BinaryReadHandle = {}
 
 ---Read a number of bytes from the file
@@ -17,7 +17,7 @@ BinaryReadHandle = {}
 function BinaryReadHandle.read(count) end
 
 ---Read a byte from the file
----@return ASCII|nil byte The byte as an [ASCII code](https://www.rapidtables.com/code/text/ascii-table.html)
+---@return ccTweaked.fs.ASCII|nil byte The byte as an [ASCII code](https://www.rapidtables.com/code/text/ascii-table.html)
 ---@throws If the file has been closed
 ------
 ---[Official Documentation](https://tweaked.cc/module/fs.html#ty:BinaryReadHandle:read)
@@ -47,7 +47,7 @@ function BinaryReadHandle.readLine(includeNewline) end
 function BinaryReadHandle.close() end
 
 ---Seek to a new position in the file. The new position is an offset relative to `whence`
----@param whence? seekWhence What `offset` is relative to. Defaults to `cur`
+---@param whence? ccTweaked.fs.seekWhence What `offset` is relative to. Defaults to `cur`
 ---@param offset? number The offset to seek to. Defaults to 0
 ---@return number|nil newPosition The new file read position relative to the start of the file or nil if seeking failed
 ---@return string|nil errorMessage The reason seeking failed

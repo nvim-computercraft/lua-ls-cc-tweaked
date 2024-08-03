@@ -44,21 +44,21 @@ rednet.MAX_ID_CHANNELS = 65500
 ---
 ---This opens two channels on the modem, one matching the ID of this computer,
 ---and another matching the value of `rednet.CHANNEL_BROADCAST`
----@param modem string|computerSide The name/side of the modem to open
+---@param modem string|ccTweaked.peripheral.computerSide The name/side of the modem to open
 ---@throws If there is no modem with the given name
 ------
 ---[Official Documentation](https://tweaked.cc/module/rednet.html#v:open)
 function rednet.open(modem) end
 
 ---Close a modem, preventing it from sending or receiving on rednet
----@param modem? string|computerSide The name/side of the modem to close. If omitted, all modems will be closed
+---@param modem? string|ccTweaked.peripheral.computerSide The name/side of the modem to close. If omitted, all modems will be closed
 ---@throws If there is no modem with the given name
 ------
 ---[Official Documentation](https://tweaked.cc/module/rednet.html#v:close)
 function rednet.close(modem) end
 
 ---Get whether a modem is currently open on rednet
----@param modem string|computerSide The name/side of the modem to check. If omitted, all modems will be checked
+---@param modem string|ccTweaked.peripheral.computerSide The name/side of the modem to check. If omitted, all modems will be checked
 ---@return boolean isOpen If the modem is open
 ------
 ---[Official Documentation](https://tweaked.cc/module/rednet.html#v:isOpen)

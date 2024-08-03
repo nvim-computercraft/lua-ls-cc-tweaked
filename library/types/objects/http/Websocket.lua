@@ -5,7 +5,7 @@
 ---that can be used to send/receive messages to/from a web server
 ------
 ---[Official Documentation](https://tweaked.cc/module/http.html#ty:Websocket)
----@class Websocket
+---@class ccTweaked.http.Websocket
 Websocket = {}
 
 ---Wait for a message from the server

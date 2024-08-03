@@ -1,11 +1,11 @@
 ---@meta
 
----@alias locale
+---@alias ccTweaked.os.locale
 ---| '"ingame"' # The current world time
 ---| '"utc"' # Get the hour of the day in UTC time
 ---| '"local"' # Get the hour of the day in the timezone that the server is located in
 
----@class dateTable
+---@class ccTweaked.os.dateTable
 ---@field year integer year number
 ---@field yday integer day of the year
 ---@field wday integer day of the week

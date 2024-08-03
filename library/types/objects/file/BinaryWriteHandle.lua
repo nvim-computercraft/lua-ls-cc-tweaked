@@ -4,11 +4,11 @@
 ---
 ------
 ---[Official Documentation](https://tweaked.cc/module/fs.html#ty:BinaryWriteHandle)
----@class BinaryWriteHandle
+---@class ccTweaked.fs.BinaryWriteHandle
 BinaryWriteHandle = {}
 
 ---Write a string or byte to the file
----@param value ASCII|string The string to write or an ASCII code to write
+---@param value ccTweaked.fs.ASCII|string The string to write or an ASCII code to write
 ---@throws If the file has been closed
 ---## Examples
 ---```
@@ -41,7 +41,7 @@ function BinaryWriteHandle.close() end
 
 ---Change where the "cursor" is, changing where bytes will be written to. The
 ---new position is an offset relative to `whence`
----@param whence? seekWhence What `offset` is relative to. Defaults to `cur`
+---@param whence? ccTweaked.fs.seekWhence What `offset` is relative to. Defaults to `cur`
 ---@param offset? number The offset to seek to. Defaults to 0
 ---@return number|nil newPosition The new file write position relative to the start of the file or nil if seeking failed
 ---@return string|nil errorMessage The reason seeking failed

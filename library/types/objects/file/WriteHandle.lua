@@ -4,7 +4,7 @@
 ---
 ------
 ---[Official Documentation](https://tweaked.cc/module/fs.html#ty:WriteHandle)
----@class WriteHandle
+---@class ccTweaked.fs.WriteHandle
 WriteHandle = {}
 
 ---Write a value to a file

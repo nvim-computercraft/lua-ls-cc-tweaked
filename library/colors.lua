@@ -20,87 +20,87 @@ colors = {}
 
 ---**Hex**: `#F0F0F0`\
 ---**RGB**: `240, 240, 240`
----@type color
+---@type ccTweaked.colors.color
 colors.white = 1
 
 ---**Hex**: `#F2B233`\
 ---**RGB**: `242, 178, 51`
----@type color
+---@type ccTweaked.colors.color
 colors.orange = 2
 
 ---**Hex**: `#E57FD8`\
 ---**RGB**: `229, 127, 216`
----@type color
+---@type ccTweaked.colors.color
 colors.magenta = 4
 
 ---**Hex**: `#99B2F2`\
 ---**RGB**: `153, 178, 242`
----@type color
+---@type ccTweaked.colors.color
 colors.lightBlue = 8
 
 ---**Hex**: `#DEDE6C`\
 ---**RGB**: `222, 222, 108`
----@type color
+---@type ccTweaked.colors.color
 colors.yellow = 16
 
 ---**Hex**: `#7FCC19`\
 ---**RGB**: `127, 204, 25`
----@type color
+---@type ccTweaked.colors.color
 colors.lime = 32
 
 ---**Hex**: `#F2B2CC`\
 ---**RGB**: `242, 178, 204`
----@type color
+---@type ccTweaked.colors.color
 colors.pink = 64
 
 ---**Hex**: `#4C4C4C`\
 ---**RGB**: `76, 76, 76`
----@type color
+---@type ccTweaked.colors.color
 colors.gray = 128
 
 ---**Hex**: `#999999`\
 ---**RGB**: `153, 153, 153`
----@type color
+---@type ccTweaked.colors.color
 colors.lightGray = 256
 
 ---**Hex**: `#4C99B2`\
 ---**RGB**: `76, 153, 178`
----@type color
+---@type ccTweaked.colors.color
 colors.cyan = 512
 
 ---**Hex**: `#B266E5`\
 ---**RGB**: `178, 102, 229`
----@type color
+---@type ccTweaked.colors.color
 colors.purple = 1024
 
 ---**Hex**: `#3366CC`\
 ---**RGB**: `51, 102, 204`
----@type color
+---@type ccTweaked.colors.color
 colors.blue = 2048
 
 ---**Hex**: `#7F664C`\
 ---**RGB**: `127, 102, 76`
----@type color
+---@type ccTweaked.colors.color
 colors.brown = 4096
 
 ---**Hex**: `#57A64E`\
 ---**RGB**: `87, 166, 78`
----@type color
+---@type ccTweaked.colors.color
 colors.green = 8192
 
 ---**Hex**: `#CC4C4C`\
 ---**RGB**: `204, 76, 76`
----@type color
+---@type ccTweaked.colors.color
 colors.red = 16384
 
 ---**Hex**: `#111111`\
 ---**RGB**: `17, 17, 17`
----@type color
+---@type ccTweaked.colors.color
 colors.black = 32768
 
 ---Combines colors into a set. Useful for Bundled Cables
----@vararg color
----@return colorSet set The result of combining the provided colors
+---@vararg ccTweaked.colors.color
+---@return ccTweaked.colors.colorSet set The result of combining the provided colors
 ---## Example
 ---```
 ---colors.combine(colors.white, colors.magenta, colours.lightBlue)
@@ -111,9 +111,9 @@ colors.black = 32768
 function colors.combine(...) end
 
 ---Removes one or more colors from a set. Useful for Bundled Cables.
----@param color color The color to subtract from
----@vararg color
----@return colorSet set The result of subtracting the provided colors
+---@param color ccTweaked.colors.color The color to subtract from
+---@vararg ccTweaked.colors.color
+---@return ccTweaked.colors.colorSet set The result of subtracting the provided colors
 ---## Example
 ---```
 ---colors.subtract(colours.lime, colours.orange, colours.white)
@@ -124,8 +124,8 @@ function colors.combine(...) end
 function colors.subtract(color, ...) end
 
 ---Test whether a color is contained within a color set
----@param set colorSet
----@param color color
+---@param set ccTweaked.colors.colorSet
+---@param color ccTweaked.colors.color
 ---## Example
 ---```
 ---colors.test(colors.combine(colors.white, colors.magenta, colours.lightBlue), colors.lightBlue)
@@ -196,7 +196,7 @@ function colors.rgb8(r, g, b) end
 function colors.rgb8(hex) end
 
 ---Converts a color into a blit hex character for use with `term.blit()`
----@param color color The color to convert
+---@param color ccTweaked.colors.color The color to convert
 ---@return string blit The blit hex character that represents the given color
 ---## Example
 ---```

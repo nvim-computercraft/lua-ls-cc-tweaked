@@ -10,25 +10,25 @@ io = {}
 ---prompt the user for input.
 ------
 ---[Official Documentation](https://tweaked.cc/module/io.html#v:stdin)
----@type Handle
+---@type ccTweaked.fs.Handle
 io.stdin = nil
 
 ---A file handle representing the "standard output". Writing to this file will
 ---display the written text to the screen.
 ------
 ---[Official Documentation](https://tweaked.cc/module/io.html#v:stdout)
----@type Handle
+---@type ccTweaked.fs.Handle
 io.stdout = nil
 
 ---A file handle representing the "standard error" stream.
 ---One may use this to display error messages, writing to it will display them on the terminal.
 ------
 ---[Official Documentation](https://tweaked.cc/module/io.html#v:stderr)
----@type Handle
+---@type ccTweaked.fs.Handle
 io.stderr = nil
 
 ---Close a file handle
----@param handle Handle The file handle to close. Defaults to the current output file
+---@param handle ccTweaked.fs.Handle The file handle to close. Defaults to the current output file
 ------
 ---[Official Documentation](https://tweaked.cc/module/io.html#v:close)
 function io.close(handle) end
@@ -39,8 +39,8 @@ function io.close(handle) end
 function io.flush() end
 
 ---Get or set the current input file
----@param file? Handle|path The new input file, either as a file path or a handle
----@return Handle handle The current input file handle
+---@param file? ccTweaked.fs.Handle|ccTweaked.fs.path The new input file, either as a file path or a handle
+---@return ccTweaked.fs.Handle handle The current input file handle
 ---@throws If the provided path cannot be opened for reading
 ------
 ---[Official Documentation](https://tweaked.cc/module/io.html#v:input)
@@ -51,8 +51,8 @@ function io.input(file) end
 ---Once the end of the file has been reached, nil will be returned and the file is automatically closed.
 ---
 ---If no file name is given, the current input will be used instead. In this case, the handle is not used.
----@param path? path The path to the file to read lines from
----@param readMode? readFormat How the lines should be read
+---@param path? ccTweaked.fs.path The path to the file to read lines from
+---@param readMode? ccTweaked.io.readFormat How the lines should be read
 ---@return fun(): string iterator The line iterator
 ---@throws If the file cannot be opened for reading
 ---
@@ -69,17 +69,17 @@ function io.input(file) end
 function io.lines(path, readMode) end
 
 ---Open a file in the mode provided
----@param path path The path to the file to open
----@param mode? openMode The mode to open the file in. Defaults to `rb` (binary read)
----@return Handle|nil handle The opened file or nil if an error occurred
+---@param path ccTweaked.fs.path The path to the file to open
+---@param mode? ccTweaked.fs.openMode The mode to open the file in. Defaults to `rb` (binary read)
+---@return ccTweaked.fs.Handle|nil handle The opened file or nil if an error occurred
 ---@return nil|string errorMessage Why the file could not be opened
 ------
 ---[Official Documentation](https://tweaked.cc/module/io.html#v:open)
 function io.open(path, mode) end
 
 ---Get or set the current output file
----@param file? Handle|path The new output file, either as a file path or a handle
----@return Handle handle The current output file handle
+---@param file? ccTweaked.fs.Handle|ccTweaked.fs.path The new output file, either as a file path or a handle
+---@return ccTweaked.fs.Handle handle The current output file handle
 ---@throws If the provided path cannot be opened for writing
 ---------
 ---[Official Documentation](https://tweaked.cc/module/io.html#v:output)
@@ -92,7 +92,7 @@ function io.output(file) end
 ---local handle = io.open('/testFile.txt')
 ---handle:read()
 ---```
----@param ... readFormat The formats to use for reading. Defaults to `l`
+---@param ... ccTweaked.io.readFormat The formats to use for reading. Defaults to `l`
 ---@return string ... The data (as a string) read from the file or nil if no data could be read.
 ------
 ---[Official Documentation](https://tweaked.cc/module/io.html#v:read)

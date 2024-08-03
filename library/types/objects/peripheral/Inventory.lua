@@ -4,7 +4,7 @@
 ---
 ------
 ---[Official Documentation](https://tweaked.cc/generic_peripheral/inventory.html)
----@class Inventory
+---@class ccTweaked.peripheral.Inventory
 Inventory = {}
 
 ---Get the size of this inventory

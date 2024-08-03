@@ -1,10 +1,10 @@
 ---@meta
 
----@alias turtleSide
+---@alias ccTweaked.turtle.turtleSide
 ---| '"left"'
 ---| '"right"'
 
----@alias turtleSlot
+---@alias ccTweaked.turtle.turtleSlot
 ---| 1
 ---| 2
 ---| 3
@@ -22,16 +22,16 @@
 ---| 15
 ---| 16
 
----@class inspectInfo
+---@class ccTweaked.turtle.inspectInfo
 ---@field name string The name of the block
 ---@field state table<string, any> The state of the block
 ---@field tags table<string, boolean> The tags of the block
 
----@class turtleDetails
+---@class ccTweaked.turtle.turtleDetails
 ---@field name string The name of the item
 ---@field count integer The number of items in this slot
 
----@class turtleDetailsDetailed
+---@class ccTweaked.turtle.turtleDetailsDetailed
 ---@field name string The name of the item
 ---@field count integer The number of items in this slot
 ---@field maxCount integer The max number of items that can be in this stack

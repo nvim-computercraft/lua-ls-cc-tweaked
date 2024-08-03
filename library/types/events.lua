@@ -1,6 +1,6 @@
 ---@meta
 
----@alias event
+---@alias ccTweaked.os.event
 ---| '"alarm"' # Fired when an alarm started with `os.setAlarm()` completes. [Official Documentation](https://tweaked.cc/event/alarm.html)
 ---| '"char"' # Fired when a key is typed on the keyboard. Only captures characters, not control keys. [Official Documentation](https://tweaked.cc/event/char.html)
 ---| '"computer_command"' # Fired when the `/computercraft queue` command is run for the current computer. [Official Documentation](https://tweaked.cc/event/computer_command.html)

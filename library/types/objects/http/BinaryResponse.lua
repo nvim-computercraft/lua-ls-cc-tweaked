@@ -1,7 +1,7 @@
 ---@meta
 
 ---A HTTP response. This provides the same methods as a file as well as some response-specific methods
----@class BinaryResponse
+---@class ccTweaked.http.BinaryResponse
 ------
 ---[Official Documentation](https://tweaked.cc/module/http.html#ty:Response)
 BinaryResponse = {}
@@ -17,7 +17,7 @@ function BinaryResponse.getResponseCode() end
 ---
 ---If multiple headers are sent with the same name, they will be combined with a
 ---comma
----@return table<HTTP_RESPONSE_HEADERS, string>
+---@return table<ccTweaked.http.HTTP_RESPONSE_HEADERS, string>
 ------
 ---[Official Documentation](https://tweaked.cc/module/http.html#ty:Response:getResponseHeaders)
 function BinaryResponse.getResponseHeaders() end
@@ -47,7 +47,7 @@ function BinaryResponse.readAll() end
 function BinaryResponse.read(count) end
 
 ---Read a byte from the response
----@return ASCII|nil byte The byte as an [ASCII code](https://www.rapidtables.com/code/text/ascii-table.html)
+---@return ccTweaked.fs.ASCII|nil byte The byte as an [ASCII code](https://www.rapidtables.com/code/text/ascii-table.html)
 ---@throws If the response has been closed
 ------
 ---[Official Documentation](https://tweaked.cc/module/http.html#ty:Response)
@@ -62,7 +62,7 @@ function BinaryResponse.read() end
 function BinaryResponse.close() end
 
 ---Seek to a new position in the response. The new position is an offset relative to `whence`
----@param whence seekWhence What `offset` is relative to
+---@param whence ccTweaked.fs.seekWhence What `offset` is relative to
 ---@param offset number The offset to seek to
 ---@return number|nil newPosition The new response read position relative to the start of the response or nil if seeking failed
 ---@return string|nil errorMessage The reason seeking failed

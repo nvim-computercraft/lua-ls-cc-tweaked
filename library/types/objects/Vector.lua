@@ -6,7 +6,7 @@
 ---
 ------
 ---[Official Documentation](https://tweaked.cc/module/vector.html#ty:Vector)
----@class Vector
+---@class ccTweaked.Vector
 ---@field x number
 ---@field y number
 ---@field z number
@@ -18,8 +18,8 @@ Vector = {}
 ---```
 ---result = vector1 + vector2
 ---```
----@param v Vector The second `Vector` to add
----@return Vector result The resulting `Vector`
+---@param v ccTweaked.Vector The second `Vector` to add
+---@return ccTweaked.Vector result The resulting `Vector`
 ------
 ---[Official Documentation](https://tweaked.cc/module/vector.html#ty:Vector:add)
 function Vector:add(v) end
@@ -30,8 +30,8 @@ function Vector:add(v) end
 ---```
 ---result = vector1 - vector2
 ---```
----@param v Vector The second `Vector` to subtract
----@return Vector result The resulting `Vector`
+---@param v ccTweaked.Vector The second `Vector` to subtract
+---@return ccTweaked.Vector result The resulting `Vector`
 ------
 ---[Official Documentation](https://tweaked.cc/module/vector.html#ty:Vector:sub)
 function Vector:sub(v) end
@@ -43,7 +43,7 @@ function Vector:sub(v) end
 ---result = vector1 * 2
 ---```
 ---@param scalar number The scalar value to multiply with
----@return Vector result The resulting `Vector`
+---@return ccTweaked.Vector result The resulting `Vector`
 ------
 ---[Official Documentation](https://tweaked.cc/module/vector.html#ty:Vector:mul)
 function Vector:mul(scalar) end
@@ -55,7 +55,7 @@ function Vector:mul(scalar) end
 ---result = vector1 / 2
 ---```
 ---@param scalar number The scalar value to divide with
----@return Vector result The resulting `Vector`
+---@return ccTweaked.Vector result The resulting `Vector`
 ------
 ---[Official Documentation](https://tweaked.cc/module/vector.html#ty:Vector:div)
 function Vector:div(scalar) end
@@ -66,19 +66,19 @@ function Vector:div(scalar) end
 ---```
 ---negated = -vector1
 ---```
----@return Vector negated The negated `Vector`
+---@return ccTweaked.Vector negated The negated `Vector`
 function Vector:unm() end
 
 ---Compute the dot product of two vectors
----@param v Vector The second vector to use for the calculation
+---@param v ccTweaked.Vector The second vector to use for the calculation
 ---@return number dot The dot product of the two vectors
 ------
 ---[Official Documentation](https://tweaked.cc/module/vector.html#ty:Vector:dot)
 function Vector:dot(v) end
 
 ---Compute the cross product of two vectors
----@param v Vector The second vector to use for the calculation
----@return Vector cross The cross products of the two vectors
+---@param v ccTweaked.Vector The second vector to use for the calculation
+---@return ccTweaked.Vector cross The cross products of the two vectors
 ------
 ---[Official Documentation](https://tweaked.cc/module/vector.html#ty:Vector:cross)
 function Vector:cross(v) end
@@ -90,14 +90,14 @@ function Vector:cross(v) end
 function Vector:length() end
 
 ---Divide this vector by its length, normalizing it
----@return Vector normalized The normalized vector
+---@return ccTweaked.Vector normalized The normalized vector
 ------
 ---[Official Documentation](https://tweaked.cc/module/vector.html#ty:Vector:normalize)
 function Vector:normalize() end
 
 ---Create a new `Vector` with each dimension rounded
 ---@param tolerance? number The tolerance that rounding should take place to (defaults to 1)
----@return Vector rounded The rounded vector
+---@return ccTweaked.Vector rounded The rounded vector
 ---## Example
 ---```
 ---local rounded = vector1:round(0.05)
@@ -118,7 +118,7 @@ function Vector:round(tolerance) end
 function Vector:toString() end
 
 ---Check if two vectors are equal
----@param v Vector The vector to compare to
+---@param v ccTweaked.Vector The vector to compare to
 ---@return boolean equal If the two vectors are equal
 ---## Example
 ---```

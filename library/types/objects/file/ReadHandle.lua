@@ -4,7 +4,7 @@
 ---
 ------
 ---[Official Documentation](https://tweaked.cc/module/fs.html#ty:ReadHandle)
----@class ReadHandle
+---@class ccTweaked.fs.ReadHandle
 ReadHandle = {}
 
 ---Read a single line from the file

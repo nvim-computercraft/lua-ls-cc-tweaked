@@ -4,7 +4,7 @@
 ---
 ------
 ---[Official Documentation](https://tweaked.cc/generic_peripheral/fluid_storage.html)
----@class FluidStorage
+---@class ccTweaked.peripheral.FluidStorage
 FluidStorage = {}
 
 ---Get all "tanks" in this fluid storage

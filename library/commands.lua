@@ -69,7 +69,7 @@ function commands.getBlockPosition() end
 ---@param maxY number the y coordinate to stop querying at
 ---@param maxZ number The z coordinate to stop querying at
 ---@param dimension? string The dimension to query (defaults to current)
----@return turtleDetails[] details An array of details on each block
+---@return ccTweaked.turtle.turtleDetails[] details An array of details on each block
 ---@throws If the coordinates are not within the world
 ---@throws If trying to get info about more than 4096 blocks
 ------
@@ -81,6 +81,6 @@ function commands.getBlockInfos(minX, minY, minZ, maxX, maxY, maxZ, dimension) e
 ---@param y number The y position to query
 ---@param z number The z position to query
 ---@param dimension? string The dimension to query (defaults to current)
----@return turtleDetails
+---@return ccTweaked.turtle.turtleDetails
 ---@throws If the coordinates are not within the world or are not currently loaded
 function commands.getBlockInfo(x, y, z, dimension) end

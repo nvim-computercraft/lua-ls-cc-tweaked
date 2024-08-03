@@ -5,7 +5,7 @@
 ---
 ------
 ---[Official Documentation](https://tweaked.cc/peripheral/speaker.html)
----@class Speaker
+---@class ccTweaked.peripheral.Speaker
 Speaker = {}
 
 ---Plays a note through the speaker

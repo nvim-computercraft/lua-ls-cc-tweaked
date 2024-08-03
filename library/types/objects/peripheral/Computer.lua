@@ -6,7 +6,7 @@
 ---`turtle`
 ------
 ---[Official Documentation](https://tweaked.cc/peripheral/computer.html)
----@class Computer
+---@class ccTweaked.peripheral.Computer
 Computer = {}
 
 ---Turn the computer on

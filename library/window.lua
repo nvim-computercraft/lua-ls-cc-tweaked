@@ -8,7 +8,7 @@
 window = {}
 
 ---Create a `Window` object that can be used as a terminal redirect
----@param parent Redirect|Monitor The parent terminal to draw to
+---@param parent ccTweaked.term.Redirect|ccTweaked.peripheral.Monitor The parent terminal to draw to
 ---@param x number The x position of this window within the parent
 ---@param y number The y position of this window within the parent
 ---@param width number The width of this window
