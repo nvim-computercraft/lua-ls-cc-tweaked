@@ -13,7 +13,7 @@ Speaker = {}
 ---The pitch argument uses semitones as the unit. This directly maps to the number of clicks on a note block. For reference, 0, 12, and 24 map to F#, and 6 and 18 map to C.
 ---
 ---A maximum of 8 notes can be played in a single tick. If this limit is hit, this function will return false.
----@param instrument instrument The instrument to play on
+---@param instrument ccTweaked.peripheral.instrument The instrument to play on
 ---@param volume? number The volume to play at (0.0 - 3.0, defaults to 1.0)
 ---@param pitch? number The pitch to play at in semitones from 0 to 24 (defaults to 12)
 ---@return boolean success If the note could be played or if the limit was reached
@@ -26,7 +26,7 @@ function Speaker.playNote(instrument, volume, pitch) end
 ---
 ---Only one sound can be played at once. This function will return false if
 ---another sound was started this tick, or if some audio is still playing.
----@param name soundEffect The name of the sound to play
+---@param name ccTweaked.peripheral.soundEffect The name of the sound to play
 ---@param volume? number The volume to play at (0.0 - 3.0, defaults to 1.0)
 ---@param pitch? number The speed to play at (0.5 - 2.0, defaults to 12)
 ---@return boolean success If the sound could be played
