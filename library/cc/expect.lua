@@ -6,7 +6,6 @@
 ---[Official Documentation](https://tweaked.cc/library/cc.expect.html)
 expect = {}
 
-
 ---Expect an argument to be of a certain type
 ---@generic T
 ---@param argIndex integer The index of the argument (for error reporting)
