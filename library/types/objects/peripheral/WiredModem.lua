@@ -12,6 +12,7 @@
 ---specififc channels. For example, the `gps` module sends all of its messages on
 ---`gps.CHANNEL_GPS` (default is 65534), while `rednet` uses the channel equal to
 ---the computer's ID
+---
 ------
 ---[Official Documentation](https://tweaked.cc/peripheral/modem.html)
 ---@class ccTweaked.peripheral.WiredModem: ccTweaked.peripheral.Modem

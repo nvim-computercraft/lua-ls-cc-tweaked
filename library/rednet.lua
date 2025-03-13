@@ -78,7 +78,7 @@ function rednet.send(recipient, message, protocol) end
 ---Every device listening on rednet can receive broadcasted messages
 ---@param message number|boolean|string|table The message to broadcast
 ---@param protocol string The protocol to broadcast the message under
--------
+------
 ---[Official Documentation](https://tweaked.cc/module/rednet.html#v:broadcast)
 function rednet.broadcast(message, protocol) end
 

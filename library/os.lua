@@ -169,11 +169,13 @@ function os.setAlarm(time) end
 function os.cancelAlarm(ID) end
 
 ---Shut down this computer immediately
+---
 ------
 ---[Official Documentation](https://tweaked.cc/module/os.html#v:shutdown)
 function os.shutdown() end
 
 ---Reboot this computer immediately
+---
 ------
 ---[Official Documentation](https://tweaked.cc/module/os.html#v:reboot)
 function os.reboot() end

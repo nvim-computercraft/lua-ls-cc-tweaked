@@ -2,6 +2,7 @@
 
 ---Command blocks can be used as a peripheral to allow their commands to be
 ---executed using a computer
+---
 ------
 ---[Official Documentation](https://tweaked.cc/peripheral/command.html)
 ---@class ccTweaked.peripheral.Command

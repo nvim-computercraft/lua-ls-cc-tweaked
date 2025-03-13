@@ -52,6 +52,7 @@ function Redirect.setCursorBlink(blink) end
 function Redirect.getSize() end
 
 ---Clears the terminal, filling it with the current background color
+---
 ------
 ---[Official Documentation](https://tweaked.cc/module/term.html#ty:Redirect:clear)
 function Redirect.clear() end

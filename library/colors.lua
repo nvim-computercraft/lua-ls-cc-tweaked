@@ -14,6 +14,7 @@
 ---the nearest tint of gray. You can check if a terminal supports color by using
 ---the function `term.isColor`. Grayscale colors are calculated by taking the
 ---average of the three components, i.e. `(red + green + blue) / 3`.
+---
 ------
 ---[Official Documentation](https://tweaked.cc/module/colors.html)
 colors = {}

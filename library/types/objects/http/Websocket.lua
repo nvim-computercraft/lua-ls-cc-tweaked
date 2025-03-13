@@ -3,6 +3,7 @@
 ---A
 ---[websocket](https://developer.mozilla.org/en-US/docs/Web/API/WebSockets_API)
 ---that can be used to send/receive messages to/from a web server
+---
 ------
 ---[Official Documentation](https://tweaked.cc/module/http.html#ty:Websocket)
 ---@class ccTweaked.http.Websocket
