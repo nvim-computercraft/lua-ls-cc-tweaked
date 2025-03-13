@@ -4,6 +4,7 @@
 ---
 ---A computer will have the type `computer` while a turtle will have the type
 ---`turtle`
+---
 ------
 ---[Official Documentation](https://tweaked.cc/peripheral/computer.html)
 ---@class ccTweaked.peripheral.Computer
