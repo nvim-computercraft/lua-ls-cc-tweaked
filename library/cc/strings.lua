@@ -1,6 +1,7 @@
 ---@meta
 
 ---Utilities for strings and text
+---
 ------
 ---[Official Documentation](https://tweaked.cc/library/cc.strings.html)
 strings = {}

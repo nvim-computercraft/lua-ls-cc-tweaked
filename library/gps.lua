@@ -13,6 +13,7 @@
 gps = {}
 
 ---The channel that GPS requests and responses are broadcast on
+---
 ------
 ---[Official Documentation](https://tweaked.cc/module/gps.html#v:CHANNEL_GPS)
 gps.CHANNEL_GPS = 65534

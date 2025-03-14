@@ -10,6 +10,7 @@
 ---
 ---When a disk is inserted, a `disk` event is fired, with the side peripheral is
 ---on. Likewise, when the disk is detached, a `disk_eject` event is fired.
+---
 ------
 ---[Official Documentation](https://tweaked.cc/peripheral/drive.html)
 ---@class ccTweaked.peripheral.Drive
