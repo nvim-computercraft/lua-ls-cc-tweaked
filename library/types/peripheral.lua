@@ -42,6 +42,13 @@
 ---| '"bit"'
 ---| '"banjo"'
 ---| '"pling"'
+---| '"creeper"'
+---| '"custom_head"'
+---| '"dragon"'
+---| '"piglin"'
+---| '"skeleton"'
+---| '"wither_skeleton"'
+---| '"zombie"'
 
 ---@alias ccTweaked.peripheral.soundEffect
 ---| '"ambient.basalt_deltas.additions"'
