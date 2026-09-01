@@ -1044,3 +1044,22 @@
 ---@field name string The item name
 ---@field count integer The number of this item present
 ---@field nbt string|nil This item's Named Binary Tag
+
+---@class ccTweaked.peripheral.itemDetails
+---@field displayName string The translated display name of the item. This uses the server's language. This will typically be English on multi-player servers, and your current language on single player.
+---@field itemGroups {displayName:string, id:string}[] The item groups this item appears on. Each item group is stored as a table, containing its id and display name.
+---This information is not available on Minecraft 1.19.3 to 1.20.3. This field is present, but empty on those versions.
+---@field maxCount number The max possible size of the item stack.
+---@field count number The number of items in the stack.
+---@field name string The namespaced ID for this item, e.g. `minecraft:dirt`. See [the Minecraft wiki](https://minecraft.wiki/w/Java_Edition_data_values#Items) for a list of vanilla item IDs.
+---@field mapColor? number RGB color code of the block on the map
+---@field mapColour? number RGB colour code of the block on the map but for british
+---@field tags? table<string, boolean> The set of tags for this item. This is a mapping of tag name to `true`.
+---@field nbt? string A hash of the NBT in the stack. While this does not expose any information about the item's NBT, it can be used as a way to compare items. If two items have the same `name` and `nbt`, then all other properties (e.g. durability, enchantment) will be the same.
+---@field lore? string[] Additional lore about this item, as a list of strings.
+---@field damage? number The amount of damage this item has taken.
+---@field maxDamage? number The maximum amount of damage this item has taken.
+---@field durability? number If this item is damaged (i.e. the durability bar is visible), the percentage left on the durability bar, between 0 and 1 (inclusive).
+---@field unbreakable? boolean `true`, if the item is unbreakable
+---@field enchantments? {name:string, displayName:string, level:number}[] The enchantments this item has.
+---@field potionEffects? {name: string, displayname: string, duration?:number, potency?:number}[] The effects this item has

@@ -38,7 +38,7 @@ function Inventory.list() end
 
 ---Get detailed information about an item in this inventory
 ---@param slot integer The slot to get more info about
----@return table|nil info Information about the item in the slot or `nil` if no item is present
+---@return ccTweaked.peripheral.itemDetail|nil info Information about the item in the slot or `nil` if no item is present
 ---@throws If the slot is out of range
 ------
 ---[Official Documentation](https://tweaked.cc/generic_peripheral/inventory.html#v:getItemDetail)
