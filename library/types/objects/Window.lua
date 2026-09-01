@@ -1,6 +1,6 @@
 ---@meta
 
----@class Window: ccTweaked.term.Redirect
+---@class ccTweaked.Window: ccTweaked.term.Redirect
 Window = {}
 
 ---Get the buffered contents of a given line in this window
